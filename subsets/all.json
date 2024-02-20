@@ -173,7 +173,7 @@
     },
     {
         "front": "combinatorics",
-        "back": "*Combinatorics* is the mathematics of counting. "
+        "back": "<i>Combinatorics</i> is the mathematics of counting. "
     },
     {
         "front": "cartesian product",
@@ -181,7 +181,7 @@
     },
     {
         "front": "permutation:",
-        "back": "A *permutation* is an ordering (or reordering) of a set of objects."
+        "back": "A <i>permutation</i> is an ordering (or reordering) of a set of objects."
     },
     {
         "front": "Type-I Error",
