@@ -1,0 +1,34 @@
+[
+    {
+        "front": "data",
+        "back": "Collections of measurements, characteristics, or facts about a group."
+    },
+    {
+        "front": "data science",
+        "back": "The process of extracting meaning from data."
+    },
+    {
+        "front": "data point",
+        "back": "A collection of one or more pieces of information collected about a single individual or entity."
+    },
+    {
+        "front": "variables",
+        "back": "Particular characteristics, measurements, or facts that make up a data point."
+    },
+    {
+        "front": "features",
+        "back": "Individual piece of information in a data set. While a variable typically represents unprocessed or raw data, features can include both variables and processed versions of the variables."
+    },
+    {
+        "front": "quantitative data",
+        "back": "Numeric data."
+    },
+    {
+        "front": "qualitative data",
+        "back": "Non-numeric or categorical data."
+    },
+    {
+        "front": "research question",
+        "back": "A question that can be answered using research, including data collection and analysis."
+    }
+]
