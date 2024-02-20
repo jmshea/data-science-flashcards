@@ -449,7 +449,7 @@
     },
     {
         "front": "Inverse CDF",
-        "back": "Given probability $p$, returns value of $x$ such that $F_X(x)=p$. Can denote as $F_{X}^{-1}(p)$. Also called the <i>quantile function</i> of <i>percent-point function</i>."
+        "back": "Given probability $p$, returns value of $x$ such that $F_X(x)=p$. Can denote as $F_{X}^{-1}(p)$. Also called the <i>quantile function</i> or <i>percent-point function</i>."
     },
     {
         "front": "Normal (Gaussian) RV",
