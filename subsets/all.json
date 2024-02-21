@@ -173,15 +173,15 @@
     },
     {
         "front": "combinatorics",
-        "back": "<i>Combinatorics</i> is the mathematics of counting. "
+        "back": "The mathematics of counting. "
     },
     {
         "front": "cartesian product",
         "back": "The _cartesian product_ of two sets $A$ and $B$ is denoted $A \\times B$ and is defined by \n\n$$A \\times B = \\{ (a,b) | a \\in A \\mbox{ and } b \\in B\\}.\n$$\nThat is, it is the set of all two-tuples with the first element from set $A$ and the second element from set $B$."
     },
     {
-        "front": "permutation:",
-        "back": "A <i>permutation</i> is an ordering (or reordering) of a set of objects."
+        "front": "permutation",
+        "back": "An ordering (or reordering) of a set of objects."
     },
     {
         "front": "Type-I Error",
@@ -192,7 +192,7 @@
         "back": "A <i>Type-II Error</i> is a <b>false negative</b> and is sometimes denoted by the Greek letter \\(\\beta\\) (\"beta\").  For NHST, a Type II error occurs if the alternative hypothesis is actually true, but the null hypothesis is not rejected."
     },
     {
-        "front": "power",
+        "front": "Power",
         "back": "The probability of rejecting the null hypothesis when the alternative hypothesis is true."
     },
     {
