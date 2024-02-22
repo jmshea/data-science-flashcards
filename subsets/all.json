@@ -192,7 +192,7 @@
         "back": "A <i>Type-II Error</i> is a <b>false negative</b> and is sometimes denoted by the Greek letter \\(\\beta\\) (\"beta\").  For NHST, a Type II error occurs if the alternative hypothesis is actually true, but the null hypothesis is not rejected."
     },
     {
-        "front": "Power",
+        "front": "power",
         "back": "The probability of rejecting the null hypothesis when the alternative hypothesis is true."
     },
     {
@@ -380,11 +380,11 @@
         "back": "The collection of Borel sets."
     },
     {
-        "front": "Random variable",
+        "front": "random variable",
         "back": "A <i>function</i> that maps from the sample space $S$ to the real line $\\mathbb{R}$."
     },
     {
-        "front": "Range (of a random variable)",
+        "front": "range (of a random variable)",
         "back": "The set of values a random variable can take on."
     },
     {
@@ -408,7 +408,7 @@
         "back": "Let $(S,\\mathcal{F},P)$ be a probability space and $X$ be a real RV on $S.$ Then the <i>survival function(SF)</i> is the real function $S_X(x) =P (X > x)= 1 -F_X(x)$."
     },
     {
-        "front": "Discrete uniform random variable",
+        "front": "discrete uniform random variable",
         "back": "RV with a finite number of values, all of which have the same probability"
     },
     {
@@ -428,15 +428,15 @@
         "back": "Models events that occur randomly over time (or space). If average of $\\alpha$ events in observation window, \\[p_X(k) = \\frac{\\alpha^k}{k!} e^{- \\alpha},~~k = 0, 1, \\ldots\\]"
     },
     {
-        "front": "Continuous uniform random variable",
+        "front": "continuous uniform random variable",
         "back": "RV with uncountably infinite range and continuous CDF"
     },
     {
-        "front": "Probability density function (pdf)",
+        "front": "probability density function (pdf)",
         "back": "For a continuous RV $X$, \\[f_X(x) = \\frac{d}{dx} F_X(x)\\] "
     },
     {
-        "front": "Piecewise function",
+        "front": "piecewise function",
         "back": "A function that has a different functional relationship on different regions of its variable(s)."
     },
     {
@@ -448,7 +448,7 @@
         "back": "RV with single parameter $\\lambda$ that controls exponential roll-off of density. The pdf is \\[ f_X(x) = \\lambda e^{-\\lambda x} u(x) \\] "
     },
     {
-        "front": "Inverse CDF",
+        "front": "inverse CDF",
         "back": "Given probability $p$, returns value of $x$ such that $F_X(x)=p$. Can denote as $F_{X}^{-1}(p)$. Also called the <i>quantile function</i> or <i>percent-point function</i>."
     },
     {
