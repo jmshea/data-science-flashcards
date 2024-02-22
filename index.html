@@ -7845,7 +7845,7 @@ a.anchor-link {
     text-align: left;
 }
 
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:700px) {
 
     .flip-container, .front, .back {
 	      height: 300px;
@@ -7892,6 +7892,10 @@ a.anchor-link {
     .flipper {
 	      height: 300px;
     }
+    .back {
+        left: 4px;
+    }
+
 
 }
 
@@ -7903,7 +7907,9 @@ a.anchor-link {
     .next {
         margin-left: 65%;
     }
-
+    .back {
+        left: 4px;
+    }
 }
 
 </style>
@@ -7911,13 +7917,13 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div style="height:40px"></div><div class="flip-container" id="ZMSuuBKwAAJh" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="ZMSuuBKwAAJh-next" onclick="window.checkFlip('ZMSuuBKwAAJh')"> </div> <div style="height:40px"></div>
+<div style="height:40px"></div><div class="flip-container" id="hoQUhAcfMpOE" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="hoQUhAcfMpOE-next" onclick="window.checkFlip('hoQUhAcfMpOE')"> </div> <div style="height:40px"></div>
 </div>
 </div>
 <div class="jp-OutputArea-child">
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="fd36dff2-8715-48df-bd5b-0b727b32cdbd" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="64b05e0d-c708-4939-be4b-83caeabf2376" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('fd36dff2-8715-48df-bd5b-0b727b32cdbd');
+var element = document.getElementById('64b05e0d-c708-4939-be4b-83caeabf2376');
 /*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
@@ -8343,14 +8349,14 @@ function createCards(id, keyControl, grabFocus, shuffleCards) {
 
 
         function try_create() {
-          if(document.getElementById("ZMSuuBKwAAJh")) {
-            createCards("ZMSuuBKwAAJh", "True", "True", "True");
+          if(document.getElementById("hoQUhAcfMpOE")) {
+            createCards("hoQUhAcfMpOE", "True", "True", "True");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsZMSuuBKwAAJh=[
+var cardshoQUhAcfMpOE=[
     {
         "front": "data",
         "back": "Collections of measurements, characteristics, or facts about a group."
@@ -8757,7 +8763,7 @@ var cardsZMSuuBKwAAJh=[
     },
     {
         "front": "survival function (SF)",
-        "back": "Let $(S,\\mathcal{F},P)$ be a probability space and $X$ be a real RV on $S$. Then the <i>survival function(SF)</i> is the real function $S_X(x) =P (X > x)= 1 -F_X(x)$."
+        "back": "Let $(S,\\mathcal{F},P)$ be a probability space and $X$ be a real RV on $S.$ Then the <i>survival function(SF)</i> is the real function $S_X(x) =P (X > x)= 1 -F_X(x)$."
     },
     {
         "front": "Discrete uniform random variable",
@@ -9148,9 +9154,9 @@ var cardsZMSuuBKwAAJh=[
         "back": "The data is randomly partitioned into a training set and a testing set. The training set is used to train an algorithm or develop a model and usually uses the majority of the data; typical values are 75% of the total data. The testing set is used to make sure that the algorithm or model is not overfit; it consists of all the data not in the training set."
     }
 ];
-var frontColorsZMSuuBKwAAJh= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsZMSuuBKwAAJh= ["var(--dark-blue-gray)" ];
-var textColorsZMSuuBKwAAJh= ["var(--snow)" ];
+var frontColorshoQUhAcfMpOE= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorshoQUhAcfMpOE= ["var(--dark-blue-gray)" ];
+var textColorshoQUhAcfMpOE= ["var(--snow)" ];
 
 
         {
@@ -9161,7 +9167,7 @@ var textColorsZMSuuBKwAAJh= ["var(--snow)" ];
 
         fetch("https://raw.githubusercontent.com/jmshea/data-science-flashcards/main/subsets/all.json", {signal})
         .then(response => response.json())
-        .then(json => createCards("ZMSuuBKwAAJh", "True", "True", "True"))
+        .then(json => createCards("hoQUhAcfMpOE", "True", "True", "True"))
         .catch(err => {
         console.log("Fetch error or timeout");
         try_create(); 
