@@ -7917,13 +7917,13 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div style="height:40px"></div><div class="flip-container" id="KEmCgYyedNTU" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="KEmCgYyedNTU-next" onclick="window.checkFlip('KEmCgYyedNTU')"> </div> <div style="height:40px"></div>
+<div style="height:40px"></div><div class="flip-container" id="JPwagtqlQTGe" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="JPwagtqlQTGe-next" onclick="window.checkFlip('JPwagtqlQTGe')"> </div> <div style="height:40px"></div>
 </div>
 </div>
 <div class="jp-OutputArea-child">
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="ba5fe3d9-c15f-4f8d-98af-f02f00e47eee" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="1ce21cad-013e-4632-a413-418d036393a0" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('ba5fe3d9-c15f-4f8d-98af-f02f00e47eee');
+var element = document.getElementById('1ce21cad-013e-4632-a413-418d036393a0');
 /*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
@@ -8081,7 +8081,7 @@ function cleanup(container, frontcard, backcard, next) {
 
     var cards=eval('cards'+container.id);
 
-    var flipper=createOneCard(container, false, cards, cardOrder[cardnum]);
+    var flipper=createOneCard(container, false, cards, cardOrder[cardnum], cardnum);
     container.append(flipper);
     cardnum= (cardnum+1) % parseInt(container.dataset.numCards);
     if ((cardnum == 0) && (container.dataset.shuffleCards == "True")) {
@@ -8141,7 +8141,7 @@ function cleanup(container, frontcard, backcard, next) {
 }
 
 
-function createOneCard  (mydiv, frontCard, cards, cardnum) {
+function createOneCard  (mydiv, frontCard, cards, cardnum, seq) {
     var colors=eval('frontColors'+mydiv.id);
     var backColors=eval('backColors'+mydiv.id);
     var textColors=eval('textColors'+mydiv.id);
@@ -8161,22 +8161,22 @@ function createOneCard  (mydiv, frontCard, cards, cardnum) {
     var frontSpan= document.createElement('span');
     frontSpan.className='flashcardtext';
     frontSpan.innerHTML=jaxify(cards[cardnum]['front']);
-    frontSpan.style.color=textColors[cardnum % textColors.length];
+    frontSpan.style.color=textColors[seq % textColors.length];
     //frontSpan.textContent=jaxify(cards[cardnum]['front']);
     //front.style.background='var(' + colors[cardnum % colors.length] + ')';
-    front.style.background=colors[cardnum % colors.length];
+    front.style.background=colors[seq % colors.length];
 
     front.append(frontSpan);
     flipper.append(front);
 
     var back = document.createElement('div');
     back.className='back flashcard';
-    back.style.background=backColors[cardnum % backColors.length];
+    back.style.background=backColors[seq % backColors.length];
 
     var backSpan= document.createElement('span');
     backSpan.className='flashcardtext';
     backSpan.innerHTML=jaxify(cards[cardnum]['back']);
-    backSpan.style.color=textColors[cardnum % textColors.length];
+    backSpan.style.color=textColors[seq % textColors.length];
     back.append(backSpan);
 
     flipper.append(back);
@@ -8249,10 +8249,10 @@ function createCards(id, keyControl, grabFocus, shuffleCards) {
     
         var flipper;
         if (i==0){
-            flipper=createOneCard(mydiv, true, cards, cardOrder[cardnum]);
+            flipper=createOneCard(mydiv, true, cards, cardOrder[cardnum], cardnum);
         }
         else {
-            flipper=createOneCard(mydiv, false, cards, cardOrder[cardnum]);
+            flipper=createOneCard(mydiv, false, cards, cardOrder[cardnum], cardnum);
         }
 
         mydiv.append(flipper);
@@ -8349,14 +8349,14 @@ function createCards(id, keyControl, grabFocus, shuffleCards) {
 
 
         function try_create() {
-          if(document.getElementById("KEmCgYyedNTU")) {
-            createCards("KEmCgYyedNTU", "True", "True", "True");
+          if(document.getElementById("JPwagtqlQTGe")) {
+            createCards("JPwagtqlQTGe", "True", "True", "True");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsKEmCgYyedNTU=[
+var cardsJPwagtqlQTGe=[
     {
         "front": "data",
         "back": "Collections of measurements, characteristics, or facts about a group."
@@ -8534,7 +8534,7 @@ var cardsKEmCgYyedNTU=[
         "back": "The mathematics of counting. "
     },
     {
-        "front": "cartesian product",
+        "front": "Cartesian product",
         "back": "The _cartesian product_ of two sets $A$ and $B$ is denoted $A \\times B$ and is defined by \n\n$$A \\times B = \\{ (a,b) | a \\in A \\mbox{ and } b \\in B\\}.\n$$\nThat is, it is the set of all two-tuples with the first element from set $A$ and the second element from set $B$."
     },
     {
@@ -8542,11 +8542,11 @@ var cardsKEmCgYyedNTU=[
         "back": "An ordering (or reordering) of a set of objects."
     },
     {
-        "front": "Type-I Error",
+        "front": "Type-I error",
         "back": "A <i>Type-I Error</i> is a <b>false positive</b> and is sometimes denoted by the Greek letter \\(\\alpha\\) (\"alpha\").  For NHST, a Type I error occurs if the null hypothesis is actually true, but it is rejected."
     },
     {
-        "front": "Type-II Error",
+        "front": "Type-II error",
         "back": "A <i>Type-II Error</i> is a <b>false negative</b> and is sometimes denoted by the Greek letter \\(\\beta\\) (\"beta\").  For NHST, a Type II error occurs if the alternative hypothesis is actually true, but the null hypothesis is not rejected."
     },
     {
@@ -9154,9 +9154,9 @@ var cardsKEmCgYyedNTU=[
         "back": "The data is randomly partitioned into a training set and a testing set. The training set is used to train an algorithm or develop a model and usually uses the majority of the data; typical values are 75% of the total data. The testing set is used to make sure that the algorithm or model is not overfit; it consists of all the data not in the training set."
     }
 ];
-var frontColorsKEmCgYyedNTU= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsKEmCgYyedNTU= ["var(--dark-blue-gray)" ];
-var textColorsKEmCgYyedNTU= ["var(--snow)" ];
+var frontColorsJPwagtqlQTGe= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsJPwagtqlQTGe= ["var(--dark-blue-gray)" ];
+var textColorsJPwagtqlQTGe= ["var(--snow)" ];
 
 
         {
@@ -9167,7 +9167,7 @@ var textColorsKEmCgYyedNTU= ["var(--snow)" ];
 
         fetch("https://raw.githubusercontent.com/jmshea/data-science-flashcards/main/subsets/all.json", {signal})
         .then(response => response.json())
-        .then(json => createCards("KEmCgYyedNTU", "True", "True", "True"))
+        .then(json => createCards("JPwagtqlQTGe", "True", "True", "True"))
         .catch(err => {
         console.log("Fetch error or timeout");
         try_create(); 
@@ -9190,7 +9190,7 @@ var textColorsKEmCgYyedNTU= ["var(--snow)" ];
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=47cdf6df-2d8b-41ed-baad-4a6c6127a00b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=66a4f905-30f1-4c20-9502-0d2a4d196479">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9210,6 +9210,15 @@ var textColorsKEmCgYyedNTU= ["var(--snow)" ];
 </ul>
 <p>If you want to study particular topics, I would suggest to use the Chapter Summaries for my book at <a href="https://www.fdsp.net">Foundations of Data Science with Python — Online Resources</a></p>
 <p>These flashcards do <strong>not</strong> cover machine learning. These machine learning cards from Chris Albon are quite popular (but not interactive): <a href="https://machinelearningflashcards.com/">Machine Learning Flashcards</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=da18d086-1089-4a36-9404-ac49aa03584c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Source-for-these-flashcards">Source for these flashcards<a class="anchor-link" href="#Source-for-these-flashcards">¶</a></h2><p>These cards are from my book <em>Foundations of Data Science with Python</em>:</p>
 <p><a href="https://amzn.to/48PvKip" target="_blank"><img alt="Cover image for the published book Foundations of Data Science with Python by John M. Shea" src="fdsp.jpg" width="200px"/></a></p>
 <p>The scheduled publication date is February 22, 2024. Here is a link to purchase: <a href="https://amzn.to/48PvKip" target="_blank"><i>Foundations of Data Science with Python</i> on Amazon</a><sup>1</sup></p>
@@ -9224,6 +9233,16 @@ var textColorsKEmCgYyedNTU= ["var(--snow)" ];
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><sup>1</sup> <em>As an Amazon Associate I earn from qualifying purchases.</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=47295e30-5aa4-4d8f-a260-5d74ca9c0e36">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="JupyterCards:-Interactive-flashcards-in-Jupyter-with-Python">JupyterCards: Interactive flashcards in Jupyter with Python<a class="anchor-link" href="#JupyterCards:-Interactive-flashcards-in-Jupyter-with-Python">¶</a></h2><p>These interactive flashcards are made using my <a href="https://github.com/jmshea/jupytercards/">JupyterCards Python library</a>. It is open source and easy to use.</p>
 </div>
 </div>
 </div>
