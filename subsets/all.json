@@ -653,7 +653,7 @@
     },
     {
         "front": "transpose",
-        "back": "Interchange the rows and columns in a matrix. For a matrix $\\mathbf{M}$, the transpose is denoted by $\\mathbf{M}^{T}$ satisifies  \\begin{equation*} \\mathbf{M}^T [i,j] = \\mathbf{M}[j,i] ~~~ \\forall i,j.\\end{equation*}"
+        "back": "Interchange the rows and columns in a matrix. For a matrix $\\mathbf{M},$ the transpose is denoted by $\\mathbf{M}^{T}$ satisifies  \\begin{equation*} \\mathbf{M}^T [i,j] = \\mathbf{M}[j,i] ~~~ \\forall i,j.\\end{equation*}"
     },
     {
         "front": "covariance<br>(random variables)",
