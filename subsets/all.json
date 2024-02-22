@@ -405,7 +405,7 @@
     },
     {
         "front": "survival function (SF)",
-        "back": "Let $(S,\\mathcal{F},P)$ be a probability space and $X$ be a real RV on $S$. Then the <i>survival function(SF)</i> is the real function $S_X(x) =P (X > x)= 1 -F_X(x)$."
+        "back": "Let $(S,\\mathcal{F},P)$ be a probability space and $X$ be a real RV on $S.$ Then the <i>survival function(SF)</i> is the real function $S_X(x) =P (X > x)= 1 -F_X(x)$."
     },
     {
         "front": "Discrete uniform random variable",
