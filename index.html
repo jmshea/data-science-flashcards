@@ -7438,18 +7438,16 @@ a.anchor-link {
   }
 }
 </style>
-</style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H61228X64C"></script>
 <script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
- gtag('config', 'G-H61228X64C');
+  gtag('config', 'G-H61228X64C');
 </script>
-
 
 <!-- Load mathjax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"> </script>
@@ -7794,10 +7792,11 @@ a.anchor-link {
 	  backface-visibility: hidden;
     background: var(--dark-blue-gray);
 	  transform: rotateY(180deg);
+    left: 8px;
 }
 
 .jp-OutputArea-output .back {
-	  transform: rotateY(180deg) translateX(7.5%);
+	  transform: rotateY(180deg) translateZ(20px);
 }
 
 .next {
@@ -7912,13 +7911,13 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div style="height:40px"></div><div class="flip-container" id="sAaIJodwHfdH" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="sAaIJodwHfdH-next" onclick="window.checkFlip('sAaIJodwHfdH')"> </div> <div style="height:40px"></div>
+<div style="height:40px"></div><div class="flip-container" id="XwRiaPscNSEu" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="XwRiaPscNSEu-next" onclick="window.checkFlip('XwRiaPscNSEu')"> </div> <div style="height:40px"></div>
 </div>
 </div>
 <div class="jp-OutputArea-child">
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="67f4d03e-c17b-4d09-981d-278c43f6d67b" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="3b5ec3cb-67d7-4dde-bce2-f93af6300b30" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('67f4d03e-c17b-4d09-981d-278c43f6d67b');
+var element = document.getElementById('3b5ec3cb-67d7-4dde-bce2-f93af6300b30');
 /*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
@@ -8344,14 +8343,14 @@ function createCards(id, keyControl, grabFocus, shuffleCards) {
 
 
         function try_create() {
-          if(document.getElementById("sAaIJodwHfdH")) {
-            createCards("sAaIJodwHfdH", "True", "False", "True");
+          if(document.getElementById("XwRiaPscNSEu")) {
+            createCards("XwRiaPscNSEu", "True", "False", "True");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardssAaIJodwHfdH=[
+var cardsXwRiaPscNSEu=[
     {
         "front": "data",
         "back": "Collections of measurements, characteristics, or facts about a group."
@@ -9150,9 +9149,9 @@ var cardssAaIJodwHfdH=[
     }
 ]
 ;
-var frontColorssAaIJodwHfdH= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorssAaIJodwHfdH= ["var(--dark-blue-gray)" ];
-var textColorssAaIJodwHfdH= ["var(--snow)" ];
+var frontColorsXwRiaPscNSEu= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsXwRiaPscNSEu= ["var(--dark-blue-gray)" ];
+var textColorsXwRiaPscNSEu= ["var(--snow)" ];
 
 
         {
@@ -9163,7 +9162,7 @@ var textColorssAaIJodwHfdH= ["var(--snow)" ];
 
         fetch("https://raw.githubusercontent.com/jmshea/data-science-flashcards/main/subsets/all.json", {signal})
         .then(response => response.json())
-        .then(json => createCards("sAaIJodwHfdH", "True", "False", "True"))
+        .then(json => createCards("XwRiaPscNSEu", "True", "False", "True"))
         .catch(err => {
         console.log("Fetch error or timeout");
         try_create(); 
