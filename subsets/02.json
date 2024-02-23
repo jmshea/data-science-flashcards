@@ -12,11 +12,11 @@
         "back": "The proportion of times that we observe a result matching our criteria during repeated experiments (including simulation); i.e., the number of times that an event occurs divided by the number of times the experiment is conducted. "
     },
     {
-        "front": "random experiments ",
+        "front": "random experiment",
         "back": "An experiment in which the result is not completely predictable to an observer based on the observer's knowledge of the system and its inputs."
     },
     {
-        "front": "outcome ",
+        "front": "outcome",
         "back": "An outcome is a non-decomposable result (or output) of a random experiment."
     },
     {
@@ -24,7 +24,7 @@
         "back": "An unordered collection of <i>unique</i> items"
     },
     {
-        "front": "event ",
+        "front": "event",
         "back": "Any possible set of outcomes of an experiment to which we will assign probability"
     },
     {
