@@ -17,7 +17,7 @@
 },
     {
     "front": "contour of equal probability density<br>(pair of random variables)",
-    "back": "Given some value $a$ that the joint density takes on, the corresponding <i>contour of equal probability density</i> $\\mathcal{C}_a$ is defined as the set of $(x,y)$ values that achieve that density. I.e., if the joint density is $f_{XY}(x,y)$, then \\begin{align*} \\mathcal{C}_a = \\left\\{ (x,y) ~\\vert~ f(x,y) =c \\right\\}. \\end{align*}"
+    "back": "Given some value $a$ that the joint density takes on, the corresponding <i>contour of equal probability density</i> $\\mathcal{C}_a$ is defined as the set of $(x,y)$ values that achieve that density. I.e., if the joint density is $f_{XY}(x,y)$, then \\begin{align*} \\mathcal{C}_a = \\left\\{ (x,y) ~\\vert~ f(x,y) =a \\right\\}. \\end{align*}"
 },
     {
     "front": "random vector",
