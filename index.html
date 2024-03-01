@@ -7926,13 +7926,13 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div style="height:40px"></div><div class="flip-container" id="QEgqSZLHSPQK" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="QEgqSZLHSPQK-next" onclick="window.checkFlip('QEgqSZLHSPQK')"> </div> <div style="height:40px"></div>
+<div style="height:40px"></div><div class="flip-container" id="FmBnIxRHOgeK" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="FmBnIxRHOgeK-next" onclick="window.checkFlip('FmBnIxRHOgeK')"> </div> <div style="height:40px"></div>
 </div>
 </div>
 <div class="jp-OutputArea-child">
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="9cd09fd0-7413-452e-9306-6557139b9705" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="ad511301-0a56-40c5-bea3-daad9f53bd53" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('9cd09fd0-7413-452e-9306-6557139b9705');
+var element = document.getElementById('ad511301-0a56-40c5-bea3-daad9f53bd53');
 /*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
@@ -8207,10 +8207,53 @@ function randomOrderArray(N) {
     return arr;
 }
 
+function createStructuredData(mydiv, cards, title, subject) {
+    var structuredData = {
+        "@context": "https://schema.org/",
+        "@type": "Quiz",
+        "about": {
+            "@type": "Thing"
+        },
+        "educationalAlignment": [
+            {
+                "@type": "AlignmentObject",
+                "alignmentType": "educationalSubject"
+            }
+        ],
+        "hasPart": []
+    };
+
+    structuredData["about"]["name"] = title;
+    structuredData["educationalAlignment"][0]["targetName"] = subject;
+
+    for (var i=0; i<cards.length; i++) {
+        var newPart = {
+            "@context": "https://schema.org/",
+            "@type": "Question",
+            "eduQuestionType": "Flashcard",
+            "acceptedAnswer": {
+                "@type": "Answer",
+            }
+        };
+
+        newPart["text"] = cards[i]["front"];
+        newPart["acceptedAnswer"]["text"] = cards[i]["back"];
+
+        structuredData["hasPart"].push(newPart);
+    }
+    /*console.log(structuredData);*/
+
+    var el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.text = JSON.stringify(structuredData);
+
+    mydiv.appendChild(el);
+
+}
 
 
 
-function createCards(id, keyControl, grabFocus, shuffleCards) {
+function createCards(id, keyControl, grabFocus, shuffleCards, title, subject) {
     console.log(id);
 
     var mydiv=document.getElementById(id);
@@ -8252,10 +8295,16 @@ function createCards(id, keyControl, grabFocus, shuffleCards) {
         checkFlip(id);
     }, {once: true});
 
+    if ((title!="") || (subject != "")){
+        createStructuredData(mydiv, cards, title, subject);
+    }
+
     var cardnum=0;
-    
+
     for (var i=0; i<2; i++) {
-    
+
+
+
         var flipper;
         if (i==0){
             flipper=createOneCard(mydiv, true, cards, cardOrder[cardnum], cardnum);
@@ -8358,14 +8407,14 @@ function createCards(id, keyControl, grabFocus, shuffleCards) {
 
 
         function try_create() {
-          if(document.getElementById("QEgqSZLHSPQK")) {
-            createCards("QEgqSZLHSPQK", "True", "True", "True");
+          if(document.getElementById("FmBnIxRHOgeK")) {
+            createCards("FmBnIxRHOgeK", "True", "True", "True", "Data Science Flashcards", "Data Science");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsQEgqSZLHSPQK=[
+var cardsFmBnIxRHOgeK=[
     {
         "front": "data",
         "back": "Collections of measurements, characteristics, or facts about a group."
@@ -9163,9 +9212,9 @@ var cardsQEgqSZLHSPQK=[
         "back": "The data is randomly partitioned into a training set and a testing set. The training set is used to train an algorithm or develop a model and usually uses the majority of the data; typical values are 75% of the total data. The testing set is used to make sure that the algorithm or model is not overfit; it consists of all the data not in the training set."
     }
 ];
-var frontColorsQEgqSZLHSPQK= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsQEgqSZLHSPQK= ["var(--dark-blue-gray)" ];
-var textColorsQEgqSZLHSPQK= ["var(--snow)" ];
+var frontColorsFmBnIxRHOgeK= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorsFmBnIxRHOgeK= ["var(--dark-blue-gray)" ];
+var textColorsFmBnIxRHOgeK= ["var(--snow)" ];
 
 
         {
@@ -9176,7 +9225,7 @@ var textColorsQEgqSZLHSPQK= ["var(--snow)" ];
 
         fetch("https://raw.githubusercontent.com/jmshea/data-science-flashcards/main/subsets/all.json", {signal})
         .then(response => response.json())
-        .then(json => createCards("QEgqSZLHSPQK", "True", "True", "True"))
+        .then(json => createCards("FmBnIxRHOgeK", "True", "True", "True", "Data Science Flashcards", "Data Science"))
         .catch(err => {
         console.log("Fetch error or timeout");
         try_create(); 
