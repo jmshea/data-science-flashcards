@@ -1,7 +1,7 @@
 [
     {
         "front": "stochastic system",
-        "back": "A system with one or more inputs and one or more outputs, for which the output(s) is(are) not a deterministic function of the output(s)"
+        "back": "A system with one or more inputs and one or more outputs, for which the outputs are not a deterministic function of the outputs."
     },
     {
         "front": "likelihoods<br>(discrete stochastic systems)",
