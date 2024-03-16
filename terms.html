@@ -3,14 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta property="og:title" content="Data Science Flashcards">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://jmshea.github.io/data-science-flashcards/images/og.png">
-<meta property="og:url" content="https://jmshea.github.io/data-science-flashcards/">
-<meta property="og:description" content="Learn data science terminology with interactive, animated flashcards">
-<meta property="descritption" content="Learn data science terminology with interactive, animated flashcards">
-<meta property="keywords" content="data science flashcards, data science terminology, probability flashcards, statistics flashcards, linear algebra flashcards">
-<title>Data Science Flashcards</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>terms</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7630,1678 +7623,276 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=099b33cf-ce97-4002-8962-245f1cec596f">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e6222801-bbe4-427e-b48b-0e807d19e935">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Data-Science-Flashcards">Data Science Flashcards<a class="anchor-link" href="#Data-Science-Flashcards">¶</a></h1><p>Learn data science terminology using over 200 interactive, animated flashcards. These focus on basic concepts, including:</p>
-<ul>
-<li>data visualization</li>
-<li>statistics, including NHSTs and linear regression</li>
-<li>probability and decision theory</li>
-<li>linear algebra</li>
-<li>data reduction (PCA)</li>
-</ul>
+<h1 id="List-of-All-Flashcard-Terms">List of All Flashcard Terms<a class="anchor-link" href="#List-of-All-Flashcard-Terms">¶</a></h1><p><a href="index.html">Link to the Interactive Flashcards</a></p>
+<p>Here is a list of all of the data science terms included in these flashcards:</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=b48f5392-6a7d-461d-9854-4bcab25feb47">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput celltag_remove-cell" id="cell-id=ea152996-4776-4985-b5ce-19788fc6a41d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput celltag_remove-cell" id="cell-id=9108ed79-28b3-4eb4-a632-e781584fdfc2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput celltag_remove-input" id="cell-id=7a97eef0-1764-407b-b195-2d9a692d16fc">
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<style>
-:root{
-  --asparagus: #87a878ff;
-  --terra-cotta: #e26d5aff;
-  --cyan-process: #5bc0ebff;
-  --dark-blue-gray: #666a86ff;
-  --snow: #fffafbff;
-  --rich-black-fogra-39: #090c08ff;
-}
-
-
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000px;
-  touch-action: pinch-zoom pan-y;
-}
-
-
-.flip-container.flip .flipper {
-    box-sizing: content-box;
-	  transform: rotateY(180deg);
-	/* transform: rotateY(180deg)  translateX(-6%);  */
-}
-
-
-.flip-container.slide .flipper.frontcard {
-    filter: brightness(90%);
-    position:absolute;
-    z-index: -20;
-    /* left: 20px; */
-}
-
-.flip-container.prepare .flipper.backcard {
-    opacity:1;
-    transition: display 0s;
-    transform:  translateX(20px); 
-}
-
-
-.flip-container.slide .flipper.backcard {
-    filter: brightness(115%);
-    /* height: 360px; */
-    opacity:1;
-	  transform:  rotateY(3deg)  translateX(700px) translateZ(20px) scale(1, 1.05) rotate(3deg);
-    z-index: 20;
-    /* left: -20px; */
-}
-
-
-
-
-.flip-container.slideback .flipper.backcard {
-    filter: brightness(100%);
-    opacity: 1;
-	  transform: translateX(0px) translateZ(20px) rotateY(0deg);
-    z-index: 10;
-}
-
-.flip-container.slideback .flipper.frontcard {
-    filter: brightness(90%);
-    transform: translateX(0px) translateZ(-20px);
-    z-index: -10;
-}
-
-
-.flip-container, .front, .back {
-	  height: 200px;
-	  width: 95%;
-}
-
-
-
-
-.flipper.frontcard {
-    position:absolute;
-	  transform: translateX(0px) rotateY(0deg) translateZ(20px);
-    z-index: 10;
-}
-
-.flipper.backcard {
-    filter: brightness(90%);
-    opacity:0;
-    position:absolute;
-    transform: translateX(0px) translateZ(-20px);
-    z-index: -10;
-}
-
-
-
-
-/* flip speed goes here */
-.flipper {
-    cursor:pointer;
-	  height: 200px;
-    margin-left:10px;
-	  position: absolute;
-    top: 0;
-	  transform-style: preserve-3d;
-	  transition: 0.6s;
-    /* width: 95%; */
-    width: 100%;
-}
-
-.flashcardtext{
-    color: var(--snow);
-    margin-left:3%;
-    position:absolute;
-    text-align:center;
-    top: 50%;
-    transform: translate(0, -50%);
-    width:90%;
-    font-size: 1.5em;
-}
-
-.back .flashcardtext{
-    font-size: 1.2em;
-}
-
-
-
-/* hide back of pane during swap */
-.front, .back {
-    -webkit-backface-visibility: hidden;
-	  backface-visibility: hidden;
-	  left: 0;
-	  position: absolute;
-	  top: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	  backface-visibility: hidden;
-    background: var(--asparagus);
-    transform: rotateY(0deg);
-	  z-index: 2;
-}
-
-/* back, initially hidden pane */
-.back {
-	  backface-visibility: hidden;
-    background: var(--dark-blue-gray);
-	  transform: rotateY(180deg);
-    left: 8px;
-}
-
-.jp-OutputArea-output .back {
-	  transform: rotateY(180deg) translateZ(20px);
-}
-
-.next {
-    color: var(--rich-black-fogra-39);
-    cursor:pointer;
-    font-size: 1.5em;
-    /*left:90%; */
-    margin-left: 70%;
-    width: 55pt;
-    height: 22pt;
-    opacity:0.3;
-    position:relative; 
-    top:-1em;
-}
-
-.next svg {
-    height:16pt;
-    width:16pt;
-    position:relative;
-    top:-2pt;
-}
-
-.jp-OutputArea-output .next svg {
-    top: 1pt;
-}
-
-.next.flipped {
-    opacity:1;
-}
-
-.next.hide {
-    opacity:0;
-}
-
-
-.flashcard{
-    border-radius: 10px;
-    outline: none;
-    color: #fafafa;
-    display:block;
-    padding:10px;
-  
-}
-
-.flashcardtext li{
-    text-align: left;
-}
-
-@media only screen and (min-width:700px) {
-
-    .flip-container, .front, .back {
-	      height: 300px;
-	      width: min(95%, 640px);
-    }
-
-    .flipper {
-        margin-left:20px;
-	      height: 300px;
-    }
-
-    .flashcardtext{
-        font-size: 20pt;
-    }
-
-    .next {
-        font-size: 16pt;
-        left:min(80%, 450pt);
-        margin-left: 0;
-        width: 55pt;
-        height: 22pt;
-        top:-0.5em;
-    }
-
-    .back .flashcardtext{
-        font-size: 1.5em;
-    }
-
-}
-
-@media only screen and (min-width:660px) and (max-width:999px) {
-    .next {
-        left:0;
-        margin-left: 80%;
-    }
-
-}
-
-@media only screen and (max-width:680px) and (min-height:376px) {
-    .flip-container, .front, .back {
-	      height: 300px;
-    }
-
-    .flipper {
-	      height: 300px;
-    }
-    .back {
-        left: 4px;
-    }
-
-
-}
-
-@media only screen and (max-width:330px) and (max-height:600px) {
-
-    .back .flashcardtext{
-        font-size: 1em;
-    }
-    .next {
-        margin-left: 65%;
-    }
-    .back {
-        left: 4px;
-    }
-}
-
-</style>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div style="height:40px"></div><div class="flip-container" id="OytQysGhMchT" style="outline:none;" tabindex="0"></div><div style="height:40px"></div><div class="next" id="OytQysGhMchT-next" onclick="window.checkFlip('OytQysGhMchT')"> </div> <div style="height:40px"></div>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="a35cf71a-db46-4087-b423-54a5df23d7f9" tabindex="0">
-<script type="text/javascript">
-var element = document.getElementById('a35cf71a-db46-4087-b423-54a5df23d7f9');
-/*!
- * swiped-events.js - v1.1.4
- * Pure JavaScript swipe events
- * https://github.com/john-doherty/swiped-events
- * @inspiration https://stackoverflow.com/questions/16348031/disable-scrolling-when-touch-moving-certain-element
- * @author John Doherty <www.johndoherty.info>
- * @license MIT
- */
-!function(t,e){"use strict";"function"!=typeof t.CustomEvent&&(t.CustomEvent=function(t,n){n=n||{bubbles:!1,cancelable:!1,detail:void 0};var a=e.createEvent("CustomEvent");return a.initCustomEvent(t,n.bubbles,n.cancelable,n.detail),a},t.CustomEvent.prototype=t.Event.prototype),e.addEventListener("touchstart",function(t){if("true"===t.target.getAttribute("data-swipe-ignore"))return;s=t.target,r=Date.now(),n=t.touches[0].clientX,a=t.touches[0].clientY,u=0,i=0},!1),e.addEventListener("touchmove",function(t){if(!n||!a)return;var e=t.touches[0].clientX,r=t.touches[0].clientY;u=n-e,i=a-r},!1),e.addEventListener("touchend",function(t){if(s!==t.target)return;var e=parseInt(l(s,"data-swipe-threshold","20"),10),o=parseInt(l(s,"data-swipe-timeout","500"),10),c=Date.now()-r,d="",p=t.changedTouches||t.touches||[];Math.abs(u)>Math.abs(i)?Math.abs(u)>e&&c<o&&(d=u>0?"swiped-left":"swiped-right"):Math.abs(i)>e&&c<o&&(d=i>0?"swiped-up":"swiped-down");if(""!==d){var b={dir:d.replace(/swiped-/,""),xStart:parseInt(n,10),xEnd:parseInt((p[0]||{}).clientX||-1,10),yStart:parseInt(a,10),yEnd:parseInt((p[0]||{}).clientY||-1,10)};s.dispatchEvent(new CustomEvent("swiped",{bubbles:!0,cancelable:!0,detail:b})),s.dispatchEvent(new CustomEvent(d,{bubbles:!0,cancelable:!0,detail:b}))}n=null,a=null,r=null},!1);var n=null,a=null,u=null,i=null,r=null,s=null;function l(t,n,a){for(;t&&t!==e.documentElement;){var u=t.getAttribute(n);if(u)return u;t=t.parentNode}return a}}(window,document);
-
-function jaxify(string) {
-    var mystring = string;
-    //console.log(mystring);
-
-    var count = 0;
-    var loc = mystring.search(/([^\\]|^)(\$)/);
-
-    var count2 = 0;
-    var loc2 = mystring.search(/([^\\]|^)(\$\$)/);
-
-    //console.log(loc);
-
-    while ((loc >= 0) || (loc2 >= 0)) {
-
-        /* Have to replace all the double $$ first with current implementation */
-        if (loc2 >= 0) {
-            if (count2 % 2 == 0) {
-                mystring = mystring.replace(/([^\\]|^)(\$\$)/, "$1\\[");
-            } else {
-                mystring = mystring.replace(/([^\\]|^)(\$\$)/, "$1\\]");
-            }
-            count2++;
-        } else {
-            if (count % 2 == 0) {
-                mystring = mystring.replace(/([^\\]|^)(\$)/, "$1\\(");
-            } else {
-                mystring = mystring.replace(/([^\\]|^)(\$)/, "$1\\)");
-            }
-            count++;
-        }
-        loc = mystring.search(/([^\\]|^)(\$)/);
-        loc2 = mystring.search(/([^\\]|^)(\$\$)/);
-        //console.log(mystring,", loc:",loc,", loc2:",loc2);
-    }
-
-    //console.log(mystring);
-    return mystring;
-}
-
-window.flipCard = function flipCard(ths) {
-    //console.log(ths);
-    //console.log(ths.id);
-    ths.classList.toggle("flip"); 
-    ths.focus();
-    var next=document.getElementById(ths.id+'-next');
-    next.style.pointerEvents='none';
-    /* ths.blur(); */
-    next.classList.add('flipped');
-    if (typeof MathJax != 'undefined') {
-        var version = MathJax.version;
-        //console.log('MathJax version', version);
-        if (version[0] == "2") {
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-        } else if (version[0] == "3") {
-            MathJax.typeset([ths]);
-        }
-    } else {
-        //console.log('MathJax not detected');
-    }
-
-
-    setTimeout(reenableNext, 600, ths, next);
-}
-
-window.checkKey = function checkKey(container, event) {
-    event.stopPropagation();
-    /*
-    console.log(container);
-    console.log(event.key);
-    console.log(event.code);
-    */
-    /* JMS:  Working here*/
-    var next=document.getElementById(container.id+'-next');
-    /* Only react if not already sliding */
-    if (! next.classList.contains("hide")) {
-        if ((event.key == "j") || (event.key == "Enter") || (event.key == "ArrowRight")) {
-            window.checkFlip(container.id);
-        }
-        if (event.key == " ") {
-            window.flipCard(container);
-        }
-    }
-    event.preventDefault();
-}
-
-
-function reenableNext(ths, next) {
-    next.style.pointerEvents='auto';
-    /* ths.tabIndex= 0;*/
-    /* ths.focus(); */
-}
-
-
-
-function slide2(containerId) {
-    var container = document.getElementById(containerId);
-    var next=document.getElementById(containerId+'-next');
-    var frontcard = container.children[0];
-    var backcard = container.children[1];
-    container.style.pointerEvents='none';
-    /* container.removeAttribute("tabindex");*/
-    /* container.blur(); */
-    //backcard.style.pointerEvents='none';
-    next.style.pointerEvents='none';
-    next.classList.remove('flipped');
-    next.classList.add('hide');
-
-    //container.classList.add("prepare");
-    
-    container.className="flip-container slide";
-    backcard.parentElement.removeChild(frontcard);
-    backcard.parentElement.appendChild(frontcard);
-    setTimeout(slideback, 600, container, frontcard, backcard, next);
-    
-}
-
-
-window.checkFlip = function checkFlip(containerId) {
-    var container = document.getElementById(containerId);
-
-
-    if (container.classList.contains('flip')) {
-        container.classList.remove('flip');
-        setTimeout(slide2, 600, containerId);
-    } 
-    else {
-        slide2(containerId);
-    }
-}
-
-
-function slideback(container, frontcard, backcard, next) {
-    container.className="flip-container slideback";
-    setTimeout(cleanup, 550, container, frontcard, backcard, next);
-}
-
-function cleanup(container, frontcard, backcard, next) {
-    container.removeChild(frontcard);
-    backcard.className="flipper frontcard";
-    container.className="flip-container";
-
-    var cardnum=parseInt(container.dataset.cardnum);
-
-    let cardOrder = JSON.parse(container.dataset.cardOrder);
-
-    var cards=eval('cards'+container.id);
-
-    var flipper=createOneCard(container, false, cards, cardOrder[cardnum], cardnum);
-    container.append(flipper);
-    cardnum= (cardnum+1) % parseInt(container.dataset.numCards);
-    if ((cardnum == 0) && (container.dataset.shuffleCards == "True")) {
-        cardOrder = randomOrderArray(parseInt(container.dataset.numCards));
-        container.dataset.cardOrder = JSON.stringify(cardOrder);
-        console.log(cardOrder);
-    }
-
-    container.dataset.cardnum=cardnum;
-    if (cardnum != 1){
-        next.innerHTML="Next >";
-    } else {
-        //next.innerHTML="Reload \\(\\circlearrowleft\\) ";
-        next.innerHTML='Reload <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 25 26"> <path d="M7,6a10,10,0,1,0,9,0" style="fill:none;stroke:black;stroke-width:2px" id="e2_circleArc"/> <line id="e3_line" x1="17" y1="6.5" x2="17.5" y2="15" style="stroke:black;fill:none;stroke-width:2px"/> <line id="e4_line" x1="16.5" y1="6.5" x2="26" y2="8" style="stroke:black;fill:none;stroke-width:2px"/> </svg> '
-        if (typeof MathJax != 'undefined') {
-            var version = MathJax.version;
-            //console.log('MathJax version', version);
-            if (version[0] == "2") {
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-            } else if (version[0] == "3") {
-                MathJax.typeset([next]);
-            }
-        } else {
-            //console.log('MathJax not detected');
-        }
-
-
-    }
-
-    if (typeof MathJax != 'undefined') {
-        var version = MathJax.version;
-        //console.log('MathJax version', version);
-        if (version[0] == "2") {
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-        } else if (version[0] == "3") {
-            MathJax.typeset();
-        }
-    } else {
-        //console.log('MathJax not detected');
-    }
-
-
-    next.style.pointerEvents='auto';
-    container.style.pointerEvents='auto';
-    /* container.tabIndex= 0; */
-    /* container.focus(); */
-    next.classList.remove('hide');
-    container.addEventListener('swiped-left', function(e) {
-        /*
-          console.log(e.detail);
-          console.log(id);
-        */
-        checkFlip(container.id);
-    }, {once: true });
-
-
-}
-
-
-function createOneCard  (mydiv, frontCard, cards, cardnum, seq) {
-    var colors=eval('frontColors'+mydiv.id);
-    var backColors=eval('backColors'+mydiv.id);
-    var textColors=eval('textColors'+mydiv.id);
-    //console.log(backColors)
-
-    var flipper = document.createElement('div');
-    if (frontCard){
-        flipper.className="flipper frontcard";    
-    }
-    else {
-        flipper.className="flipper backcard";   
-    }
-
-    var front = document.createElement('div');
-    front.className='front flashcard';
-
-    var frontSpan= document.createElement('span');
-    frontSpan.className='flashcardtext';
-    frontSpan.innerHTML=jaxify(cards[cardnum]['front']);
-    frontSpan.style.color=textColors[seq % textColors.length];
-    //frontSpan.textContent=jaxify(cards[cardnum]['front']);
-    //front.style.background='var(' + colors[cardnum % colors.length] + ')';
-    front.style.background=colors[seq % colors.length];
-
-    front.append(frontSpan);
-    flipper.append(front);
-
-    var back = document.createElement('div');
-    back.className='back flashcard';
-    back.style.background=backColors[seq % backColors.length];
-
-    var backSpan= document.createElement('span');
-    backSpan.className='flashcardtext';
-    backSpan.innerHTML=jaxify(cards[cardnum]['back']);
-    backSpan.style.color=textColors[seq % textColors.length];
-    back.append(backSpan);
-
-    flipper.append(back);
-
-    return flipper;
-
-}
-
-function randomOrderArray(N) {
-    // Create an array with numbers from 0 to N-1
-    let arr = Array.from({ length: N }, (_, index) => index);
-
-    // Shuffle the array using Fisher-Yates algorithm
-    for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-
-    return arr;
-}
-
-function createStructuredData(mydiv, cards, title, subject) {
-    var structuredData = {
-        "@context": "https://schema.org/",
-        "@type": "Quiz",
-        "about": {
-            "@type": "Thing"
-        },
-        "educationalAlignment": [
-            {
-                "@type": "AlignmentObject",
-                "alignmentType": "educationalSubject"
-            }
-        ],
-        "hasPart": []
-    };
-
-    structuredData["about"]["name"] = title;
-    structuredData["educationalAlignment"][0]["targetName"] = subject;
-
-    for (var i=0; i<cards.length; i++) {
-        var newPart = {
-            "@context": "https://schema.org/",
-            "@type": "Question",
-            "eduQuestionType": "Flashcard",
-            "acceptedAnswer": {
-                "@type": "Answer",
-            }
-        };
-
-        newPart["text"] = cards[i]["front"];
-        newPart["acceptedAnswer"]["text"] = cards[i]["back"];
-
-        structuredData["hasPart"].push(newPart);
-    }
-    /*console.log(structuredData);*/
-
-    var el = document.createElement('script');
-    el.type = 'application/ld+json';
-    el.text = JSON.stringify(structuredData);
-
-    mydiv.parentElement.appendChild(el);
-
-}
-
-
-
-function createCards(id, keyControl, grabFocus, shuffleCards, title, subject) {
-    console.log(id);
-
-    var mydiv=document.getElementById(id);
-    /*mydiv.onclick = window.flipCard(mydiv);*/
-    /*
-    mydiv.addEventListener('click', function(){window.flipCard(mydiv);}, false);
-    mydiv.addEventListener('keydown', function(event){window.checkKey(mydiv,event);}, true);
-    */
-    mydiv.onclick = function(){window.flipCard(mydiv);};
-    //console.log(keyControl);
-    if (keyControl == "True"){
-        mydiv.onkeydown = function(event){window.checkKey(mydiv,event);};
-    }
-    /* mydiv.addEventListener('keydown', function(event){event.stopPropagation(); console.log(event); event.preventDefault();}, true); */
-    /*mydiv.onkeypress = function(event){console.log(event); event.preventDefault();};*/
-
-    //console.log(mydiv);
-
-    var cards=eval('cards'+id);
-    mydiv.dataset.cardnum=0;
-    mydiv.dataset.numCards=cards.length;
-
-    mydiv.dataset.shuffleCards = shuffleCards;
-    var cardOrder;
-    if (shuffleCards == "True"){
-        cardOrder = randomOrderArray(cards.length);
-    } else {
-        cardOrder = Array.from({ length: cards.length }, (_, index) => index);
-    }
-    mydiv.dataset.cardOrder = JSON.stringify(cardOrder);
-    console.log(mydiv.dataset.cardOrder);
-
-
-    mydiv.addEventListener('swiped-left', function(e) {
-        /*
-          console.log(e.detail);
-          console.log(id);
-        */
-        checkFlip(id);
-    }, {once: true});
-
-    if ((title!="") || (subject != "")){
-        createStructuredData(mydiv, cards, title, subject);
-    }
-
-    var cardnum=0;
-
-    for (var i=0; i<2; i++) {
-
-
-
-        var flipper;
-        if (i==0){
-            flipper=createOneCard(mydiv, true, cards, cardOrder[cardnum], cardnum);
-        }
-        else {
-            flipper=createOneCard(mydiv, false, cards, cardOrder[cardnum], cardnum);
-        }
-
-        mydiv.append(flipper);
-        if (typeof MathJax != 'undefined') {
-            var version = MathJax.version;
-            if (typeof version == 'undefined') {
-                setTimeout(function(){
-                    var version = MathJax.version;
-                    console.log('After sleep, MathJax version', version);
-                    if (version[0] == "2") {
-                        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-                    } else if (version[0] == "3") {
-                        if (MathJax.hasOwnProperty('typeset') ) {
-                            MathJax.typeset([flipper]);
-                        } else {
-                            console.log('WARNING: Trying to force load MathJax 3');
-                            window.MathJax = {
-                                tex: {
-                                    inlineMath: [['$', '$'], ['\\(', '\\)']]
-                                },
-                                svg: {
-                                    fontCache: 'global'
-                                }
-                            };
-
-                            (function () {
-                                var script = document.createElement('script');
-                                script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-                                script.async = true;
-                                document.head.appendChild(script);
-                            })();
-                        }
-                        MathJax.typeset([flipper]);
-                    }
-                }, 500);
-            } else{
-                console.log('MathJax version', version);
-                if (version[0] == "2") {
-                    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-                } else if (version[0] == "3") {
-                    if (version[0] == "2") {
-                        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-                    } else if (version[0] == "3") {
-                        if (MathJax.hasOwnProperty('typeset') ) {
-                            MathJax.typeset([flipper]);
-                        } else {
-                            console.log('WARNING: Trying to force load MathJax 3');
-                            window.MathJax = {
-                                tex: {
-                                    inlineMath: [['$', '$'], ['\\(', '\\)']]
-                                },
-                                svg: {
-                                    fontCache: 'global'
-                                }
-                            };
-
-                            (function () {
-                                var script = document.createElement('script');
-                                script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-                                script.async = true;
-                                document.head.appendChild(script);
-                            })();
-                        }
-                        MathJax.typeset([flipper]);
-                    }
-                }
-            }
-        } else {
-            console.log('MathJax not detected');
-        }
-
-
-        cardnum = (cardnum + 1) % mydiv.dataset.numCards;
-    }
-    mydiv.dataset.cardnum = cardnum;
-
-    var next=document.getElementById(id+'-next');
-    if (cards.length==1) {
-        // Don't show next if no other cards!
-        next.style.pointerEvents='none';
-        next.classList.add('hide');
-    } else {
-        next.innerHTML="Next >";
-    }
-
-    if (grabFocus == "True" )
-        mydiv.focus();
-
-    return flipper;
-}
-
-
-
-
-
-        function try_create() {
-          if(document.getElementById("OytQysGhMchT")) {
-            createCards("OytQysGhMchT", "True", "True", "True", "Data Science Flashcards", "Data Science");
-          } else {
-             setTimeout(try_create, 200);
-          }
-        };
-    
-var cardsOytQysGhMchT=[
-    {
-        "front": "data",
-        "back": "Collections of measurements, characteristics, or facts about a group."
-    },
-    {
-        "front": "data science",
-        "back": "The process of extracting meaning from data."
-    },
-    {
-        "front": "data point",
-        "back": "A collection of one or more pieces of information collected about a single individual or entity."
-    },
-    {
-        "front": "variables",
-        "back": "Particular characteristics, measurements, or facts that make up a data point."
-    },
-    {
-        "front": "features",
-        "back": "Individual piece of information in a data set. While a variable typically represents unprocessed or raw data, features can include both variables and processed versions of the variables."
-    },
-    {
-        "front": "quantitative data",
-        "back": "Numeric data."
-    },
-    {
-        "front": "qualitative data",
-        "back": "Non-numeric or categorical data."
-    },
-    {
-        "front": "research question",
-        "back": "A question that can be answered using research, including data collection and analysis."
-    },
-    {
-        "front": "scatter plot",
-        "back": "A (two-dimensional) scatter plot takes two sequences $\\mathbf{x}= (x_0, x_1, \\ldots)$ and $\\mathbf{y}=(y_0, y_1, \\ldots)$ and plots symbols (called <i>markers</i>) that represent the locations of the points $(x_0, y_0), (x_1, y_1), \\ldots$ in two dimensions. "
-    },
-    {
-        "front": "histogram",
-        "back": "A type of bar graph in which the heights of the bars is proportional to the number of occurrences of the outcomes spanned by the width of the bars "
-    },
-    {
-        "front": "relative frequency",
-        "back": "The proportion of times that we observe a result matching our criteria during repeated experiments (including simulation); i.e., the number of times that an event occurs divided by the number of times the experiment is conducted. "
-    },
-    {
-        "front": "random experiment",
-        "back": "An experiment in which the result is not completely predictable to an observer based on the observer's knowledge of the system and its inputs."
-    },
-    {
-        "front": "outcome",
-        "back": "An outcome is a non-decomposable result (or output) of a random experiment."
-    },
-    {
-        "front": "set",
-        "back": "An unordered collection of <i>unique</i> items"
-    },
-    {
-        "front": "event",
-        "back": "Any possible set of outcomes of an experiment to which we will assign probability"
-    },
-    {
-        "front": "event class",
-        "back": "A collection of all events to which we assign probability. For our purposes, it is a set of subsets of $S$. "
-    },
-    {
-        "front": "fair experiment",
-        "back": "An experiment is <i>fair</i> if every outcome has the same probability of occurring."
-    },
-    {
-        "front": "probability",
-        "back": "A number between 0 and 1 that we assign to an event that is proportional to how likely that event is to occur"
-    },
-    {
-        "front": "disjoint",
-        "back": "Collections of data are disjoint if no data point belongs to more than one of the collections"
-    },
-    {
-        "front": "set",
-        "back": "A set is an unordered collection of unique items"
-    },
-    {
-        "front": "partition<br>(data set)",
-        "back": "A group of <b>disjoint</b> collections of data, such that every data point in the original data set belongs to exactly one of the collections"
-    },
-    {
-        "front": "statistical hypothesis",
-        "back": "An explanation for phenomena observed in a data set that can be formally tested using the data"
-    },
-    {
-        "front": "binary hypothesis test ",
-        "back": "A binary hypothesis test is a statistical test that decides between two competing statistical hypotheses."
-    },
-    {
-        "front": "null hypothesis<br>(for multiple groups)",
-        "back": "The hypothesis that the feature(s) being measured comes from the same random phenomena; any observed differences come from issues related to random sampling, such as having sets that are too small to accurately measure the true value of some summary statistic"
-    },
-    {
-        "front": "model-based methods",
-        "back": "In <I>model-based methods</I>, the data is assumed to come from some known statistical distribution. Such methods often allow the use of analytical methods."
-    },
-    {
-        "front": "model-free methods",
-        "back": "In <I>model-free methods</I>, no assumption is made about the data fitting to some statistical model.  Thus, analytical methods are usually not possible. Instead, techniques must be applied to the data itself to answer questions about the data."
-    },
-    {
-        "front": "resampling",
-        "back": "Resampling is a type of statistical simulation in which new samples are repeatedly drawn from the existing data for each of the groups under consideration, and the statistical measures being used are evaluated for each of the new sample groups. "
-    },
-    {
-        "front": "plot legend",
-        "back": "A <i>plot legend</i> is a key that shows which visual indicators (such as marker styles, line styles, and colors) correspond to which data variable."
-    },
-    {
-        "front": "outlier",
-        "back": "A value in a dataset that takes on a value that is not reasonable, based on the other values in the dataset or other domain knowledge. Outliers are often due to data entry, measurement, or unit conversion errors."
-    },
-    {
-        "front": "mode",
-        "back": "The <i>mode</i> of a data set is a value in the data set that appears most often. As there may be more than one most common value, the mode of a data set is not unique."
-    },
-    {
-        "front": "median",
-        "back": "The <i>median</i> of a data set is a value $m$ such that the number of data points that are less than $m$ is equal to the number of data points that are greater than $m$. For some data sets, there may be multiple values that satisify this criterion, so the median is not always unique."
-    },
-    {
-        "front": "<i>average</i> (or <i>sample mean</i>) of a data set",
-        "back": "The value that minimizes the squared error to the data. For a data set $d_0, d_1, \\ldots, d_{N-1}$ the average is\n \\begin{align*}\n \\overline{d} = \\frac{1}{N} \\sum_{i=0}^{N-1} d_i.\n \\end{align*}\n"
-    },
-    {
-        "front": "event class",
-        "back": "For a sample space $S$ and a probability measure $P,$ the event class, denoted by $\\mathcal{F}$ is a collection of all subsets of $S$ to which we will assign probability (i.e., for which $P$ will be defined). The sets in $\\mathcal{F}$ are called events."
-    },
-    {
-        "front": "power set",
-        "back": "For a set $S$ with finite cardinality, $|S|=N < \\infty$, the power set is the set of all possible subsets. We will use the notation $2^S$ to denote the power set."
-    },
-    {
-        "front": "probability measure",
-        "back": "The probability measure, $P$, is a real-valued set function that maps every element of the event class to the real line."
-    },
-    {
-        "front": "composite experiment",
-        "back": "A composite experiment is any experiment that consists of multiple sub-experiments."
-    },
-    {
-        "front": "trial (compound experiments)",
-        "back": "A trial in a compound experiment is one of the sub-experiments that make up the composite experiment."
-    },
-    {
-        "front": "repeated experiment",
-        "back": "A repeated experiment is a compound experiment in which the trials are identical and independent of each other."
-    },
-    {
-        "front": "statistical regularity",
-        "back": "An experiment has statistical regularity if under repeated experiments, the relative frequencies converge (in some sense) to some fixed values. "
-    },
-    {
-        "front": "outcome (of a random experiment)",
-        "back": "An outcome of a random experiment is a result of the experiment that cannot be further decomposed."
-    },
-    {
-        "front": "sample space",
-        "back": "The sample space of a random experiment is the set of all possible outcomes."
-    },
-    {
-        "front": "event",
-        "back": "An event is a set of outcomes. The event occurs if the result of the experiment is any of the outcomes in the set. "
-    },
-    {
-        "front": "fair (random experiment)",
-        "back": "An experiment is said to be fair if every outcome is equally likely."
-    },
-    {
-        "front": "combinatorics",
-        "back": "The mathematics of counting. "
-    },
-    {
-        "front": "Cartesian product",
-        "back": "The _cartesian product_ of two sets $A$ and $B$ is denoted $A \\times B$ and is defined by \n\n$$A \\times B = \\{ (a,b) | a \\in A \\mbox{ and } b \\in B\\}.\n$$\nThat is, it is the set of all two-tuples with the first element from set $A$ and the second element from set $B$."
-    },
-    {
-        "front": "permutation",
-        "back": "An ordering (or reordering) of a set of objects."
-    },
-    {
-        "front": "Type-I error",
-        "back": "A <i>Type-I Error</i> is a <b>false positive</b> and is sometimes denoted by the Greek letter \\(\\alpha\\) (\"alpha\").  For NHST, a Type I error occurs if the null hypothesis is actually true, but it is rejected."
-    },
-    {
-        "front": "Type-II error",
-        "back": "A <i>Type-II Error</i> is a <b>false negative</b> and is sometimes denoted by the Greek letter \\(\\beta\\) (\"beta\").  For NHST, a Type II error occurs if the alternative hypothesis is actually true, but the null hypothesis is not rejected."
-    },
-    {
-        "front": "power",
-        "back": "The probability of rejecting the null hypothesis when the alternative hypothesis is true."
-    },
-    {
-        "front": "exact permutation test",
-        "back": "The data is permuted among the groups in every possible order. (No data is repeated.)"
-    },
-    {
-        "front": "bootstrap distribution",
-        "back": "For some statistic of sample data, the <i>bootstrap distribution</i> is a characterization of the possible values of that statistic and the mapping of probability to those values that arises from creating values of that statistic via bootstrap sampling. Whereas the sampling distribution is based on samples from the original random distribution, the bootstrap distribution is based on resampling from a fixed set of data."
-    },
-    {
-        "front": "confidence interval (CI)",
-        "back": "Given samples from a random distribution and a confidence level c%, the c% CI for some parameter is an interval that will contain the true value of the parameter c% of the time if the sampling process were repeated many times."
-    },
-    {
-        "front": "statistical study",
-        "back": "A means to answer a research question using data."
-    },
-    {
-        "front": "experimental study or experiment",
-        "back": "A study in which the investigator controls one or more of the variables."
-    },
-    {
-        "front": "observational study",
-        "back": "A study in which data is collected about variables of interest for some participants without any attempt to control the variables for the participants. In particular, if some of the variables correspond to treatments, there is no attempt to randomize which participants receive which treatments. "
-    },
-    {
-        "front": "randomized control trial (RCT)",
-        "back": "An experiment involving participants that are <b>randomly assigned</b> to either a <i>control group</i> or one or more <i>treatment groups</i>. The control group receives no treatment or the standard treatment. The treatment group receives the novel treatment that is to be evaluated."
-    },
-    {
-        "front": "natural experiment",
-        "back": "An experiment in which some participants are exposed to a novel treatment, while others are exposed to a control treatment, in a way that approximates the random assignment of a randomized control trial. "
-    },
-    {
-        "front": "population",
-        "back": "<i>All members</i> of a group that share some common characteristic."
-    },
-    {
-        "front": "population study",
-        "back": "In a <i>population study</i>, data are gathered about a group (often people) whose members share some common characteristic(s)."
-    },
-    {
-        "front": "sample",
-        "back": "In a <i>population study</i>, a <i>sample</i> is a subset of the population for which data is collected. Ideally, the sample is large enough to provide statistical significance for issues being studied."
-    },
-    {
-        "front": "cross-sectional study",
-        "back": "A <i>cross-sectional study</i> is an observational study that collects data about some population at a single instance in time. "
-    },
-    {
-        "front": "longitudinal study",
-        "back": "A <i>longitudinal study</i>, involves collecting repeated observations over time for a population."
-    },
-    {
-        "front": "longitudinal cohort study",
-        "back": "A <i>longitudinal study</i>, involves collecting repeated observations over time for a particular set of members (called a cohort) of a population."
-    },
-    {
-        "front": "prospective study",
-        "back": "A study in which the research question is formulated <i>first</i> and used to formulate the design of the data collection (including not only what data is to be collected, but from what subjects, and how the data is to be collected). "
-    },
-    {
-        "front": "retrospective study",
-        "back": "A study that tries to answer a research question by using data that has already been collected."
-    },
-    {
-        "front": "post hoc analysis",
-        "back": "Retrospective analysis involving computing new statistics or searching for new effects that were not identified or hypothesized in formulating the study. "
-    },
-    {
-        "front": "selection bias",
-        "back": "Occurs when the sample is chosen in a way that causes it to differ from a random sample from the population being studied."
-    },
-    {
-        "front": "sampling distribution",
-        "back": "For some statistic of sample data, the <i>sampling distribution</i> characterizes the possible values of that statistic and the mapping of probability to those values, under some underlying assumption(s) on the population. The sampling distribution varies with the size(s) of the group(s) in the sample."
-    },
-    {
-        "front": "mode(s) of a distribution    ",
-        "back": "For a distribution of random values,  the value(s) with the maximum probability (or probability density -- see Chapter 8) are the <i>modes</i> of the distribution."
-    },
-    {
-        "front": "unimodal distribution    ",
-        "back": "A distribution of random values that has a single mode."
-    },
-    {
-        "front": "tail probability",
-        "back": "For a unimodal distribution in which the probabilities decrease as some function of the distance from the mode, a <i>tail probability</i> is the probability of being at least some distance from the mode."
-    },
-    {
-        "front": "right, or upper, tail",
-        "back": "For a random value $\\Delta$ that has a distribution with mode $M_\\Delta$, the <i>right tail</i> or <i>upper tail</i> is of the form $P(\\Delta > M_\\Delta +d)$  for some value $d>0$.."
-    },
-    {
-        "front": "left, or lower, tail",
-        "back": "For a random value $\\Delta$ that has a distribution with mode $M_\\Delta$, the <i>left tail</i> or <i>lower tail</i> is of the form $P(\\Delta < M_\\Delta -d)$ for some value $d>0$."
-    },
-    {
-        "front": "two-sided tail",
-        "back": "For a random value $\\Delta$ that has a distribution with mode $M_\\Delta$, a <i>two-sided tail</i> is of the form $P(|\\Delta - M_\\Delta| > d)$ for some value $d>0$."
-    },
-    {
-        "front": "conditional probability",
-        "back": "The conditional probability of an event $A$ given that an event $B$ occurred, where $P(B) \\ne 0$, is \n $$ P(A|B) = \\frac{P \\left( A \\cap B \\right)}{P\\left(B\\right)}\n$$"
-    },
-    {
-        "front": "statistically independent <br>(two events)",
-        "back": "Given a probability space $S, \\mathcal{F}, P$ and two events $A\\in \\mathcal{F}$ and $B \\in \\mathcal{F}$, $A$ and $B$ are  <i>statistically independent</i> if and only if (iff) <br><br> $$ P(A \\cap B) = P(A)P(B).$$ "
-    },
-    {
-        "front": "statistically independent<br>(any number of events)",
-        "back": "Given a probability space $S, \\mathcal{F}, P$, events $E_0, E_1, \\ldots E_{n-1}$ in $\\mathcal{F}$ are <i>statistically independent</i> iff \n \\begin{align*} &P(E_i \\cap E_j)  = P(E_i) P(E_j), ~~ \\scriptstyle \\forall i \\ne j \\\\ \n &  P(E_i \\cap E_j \\cap E_k) = P(E_i) P(E_j) P(E_k), ~~ \\scriptstyle \\forall i \\ne j \\ne k \\\\ \n &  \\scriptstyle \\ldots \\\\ \n & \\scriptstyle P(E_0 \\cap E_1 \\cap \\ldots \\cap E_{n-1}) \\, = \\, P(E_0) P(E_1) \\cdots P(E_{n-1}), \\\\ \n \\end{align*}"
-    },
-    {
-        "front": "pairwise statistically independent ",
-        "back": "Given a probability space $S, \\mathcal{F}, P$, a collection of events $E_0, E_1, \\ldots E_{n-1}$ in $\\mathcal{F}$ are <i>pairwise statistically independent</i> iff \\begin{align*} P(E_i \\cap E_j) &= P(E_i) P(E_j), ~~ \\forall i \\ne j \\end{align*}"
-    },
-    {
-        "front": "statistically independent (s.i.)<br>vs<br>mutually exclusive (m.e.)",
-        "back": "Remember:<br> m.e. is a <b>set relation</b><br>s.i. is a <b>probability relation</b><br>Events cannot be both s.i. and m.e. unless at least one has prob. zero."
-    },
-    {
-        "front": "conditional independence (events)",
-        "back": "Events $A$ and $B$ are <i>conditionally independent</i> given an event $C$ iff $A$ and $B$ are independent under the conditional probability measure $P(\\cdot | C).$  I.e., $A$ and $B$ are conditionally independent iff<br>$$P(A \\cap B |C) = P(A|C) P(B|C).$$"
-    },
-    {
-        "front": "stochastic system",
-        "back": "A system with one or more inputs and one or more outputs, for which the outputs are not a deterministic function of the outputs."
-    },
-    {
-        "front": "likelihoods<br>(discrete stochastic systems)",
-        "back": "For a stochastic system with a discrete input events $\\{ A_0, A_i, \\ldots \\}$ and  discrete output events $\\{B_0, B_1, \\ldots\\}$,  the <I>likelihoods</I> are the conditional probabilities of the output events given the input events:\n \\[ P(B_j| A_i). \\]"
-    },
-    {
-        "front": "<I>a posteriori</I> probability<br>(discrete stochastic system)",
-        "back": "For a stochastic system with discrete input events $\\{ A_0, A_i, \\ldots \\}$ and discrete output events $\\{B_0, B_1, \\ldots\\}$,  the <I>a posterior probabilities</I> (APPs) are the conditional probabilities of the input events given the observed outputs:\n \\[ P(A_i | B_j). \\]"
-    },
-    {
-        "front": "<I>a priori</i> probability<br>(discrete stochastic system)",
-        "back": "For a stochastic system with discrete input events $\\{ A_0, A_i, \\ldots \\}$,  the <I>a priori probabilities</I> are the probabilities of the input events before any output is observed:\n \\[ P(A_i). \\]"
-    },
-    {
-        "front": "Bayes' Rule<br>(discrete stochastic system)",
-        "back": "Given likelihoods $P(B_j|A_i)$ and <I>a prioris</I> $P(A_i)$, the <I>a posteriori</I> probabilities (APPs) can be written as \n \\[ P(A_i|B_j) = \\frac{P\\left(B_j \\left \\vert A_i \\right. \\right) P\\left( A_i \\right)} { \\sum_i P\\left(B_j \\left \\vert A_i \\right. \\right) P\\left( A_i \\right)} \\]"
-    },
-    {
-        "front": "base rate fallacy",
-        "back": "Assuming the likelihoods will determine the probabilities and negelecting the <I>a prioris</I>, which give some <B>base rate</B> at which one of the phenomena occurs."
-    },
-    {
-        "front": "hidden state",
-        "back": "An internal state (for example, memory contents) of a system that can affect outputs but that is not directly observable."
-    },
-    {
-        "front": "decision rule<br>(discrete stochastic system)",
-        "back": "For a discrete stochastic system with inputs (or hidden states) $\\{A_i\\}$ and outputs $\\{B_j\\}$, a <I>decision rule</I> for an observation $B_j$ gives a choice of corresponding input event $A_i$.<br> The decision rule may be chosen to optimize some function of the inputs and outputs (e.g., likelihood or APP)."
-    },
-    {
-        "front": "maximum likelihood (ML) rule<br>(discrete stochastic system)",
-        "back": "For a stochastic system with a discrete input events $\\{ A_0, A_i, \\ldots \\}$ and  discrete output events $\\{B_0, B_1, \\ldots\\}$,  the <I>maximum likelihood</I> decision rule given $B_j$ was received is <br> $$ \\hat{A}_i, \\mbox{ where } i = \\arg \\max_{i \\in \\{0,1\\}} P(B_j|A_i). $$ "
-    },
-    {
-        "front": "MAP rule<br>(discrete stochastic system)",
-        "back": "For a stochastic system with a discrete input events $\\{ A_0, A_i, \\ldots \\}$ and  discrete output events $\\{B_0, B_1, \\ldots\\}$,  the <I>maximum a posteriori (MAP)</I> decision rule given $B_j$ was received is <br> $$ \\hat{A}_i, \\mbox{ where } i = \\arg \\max_{i \\in \\{0,1\\}} P(A_i|B_j). $$ "
-    },
-    {
-        "front": "uninformative prior",
-        "back": "A collection of <i>a priori</i> probabilities that do not give preference to any of the outcomes; usually flat (constant) across the set of outcomes."
-    },
-    {
-        "front": "informative prior",
-        "back": "A collection of <i>a priori</i> probabilities that are based on information that are external to the data and that are usually not flat (constant) across the set of outcomes."
-    },
-    {
-        "front": "credible interval",
-        "back": "A $C$% <i>credible interval</i> is an interval of values that contains $C$% of the <i>a posteriori</i> probability."
-    },
-    {
-        "front": "Borel sets (of $\\mathbb{R}$)",
-        "back": "The collection of all countable unions, intersections, and complements of intervals."
-    },
-    {
-        "front": "Borel field or Borel $\\sigma$-algebra",
-        "back": "The collection of Borel sets."
-    },
-    {
-        "front": "random variable",
-        "back": "A <i>function</i> that maps from the sample space $S$ to the real line $\\mathbb{R}$."
-    },
-    {
-        "front": "range (of a random variable)",
-        "back": "The set of values a random variable can take on."
-    },
-    {
-        "front": "discrete random variable",
-        "back": "RV with a finite or countably infinite range"
-    },
-    {
-        "front": "probability mass function (PMF)",
-        "back": "Function from range of a discrete RV $X$ to probabilities, $p_X(x) = \\operatorname{Pr}( X=x)$."
-    },
-    {
-        "front": "cumulative distribution function (CDF)",
-        "back": "Let $(S,\\mathcal{F},P)$ be a probability space and $X$ be a real RV on $S$. Then the <i>cumulative distribution function (CDF)</i> is the real function $F_X(x) =P (X\\le x)$. "
-    },
-    {
-        "front": "staircase function",
-        "back": "A staircase function is a piecewise constant function of its argument that has at most a countable number of pieces."
-    },
-    {
-        "front": "survival function (SF)",
-        "back": "Let $(S,\\mathcal{F},P)$ be a probability space and $X$ be a real RV on $S.$ Then the <i>survival function(SF)</i> is the real function $S_X(x) =P (X > x)= 1 -F_X(x)$."
-    },
-    {
-        "front": "discrete uniform random variable",
-        "back": "RV with a finite number of values, all of which have the same probability"
-    },
-    {
-        "front": "Bernoulli random variable",
-        "back": "RV with two values. Usually 0 and 1, with $p$ such that $P(B=1) = p$ and $P(B=0) = 1-p$."
-    },
-    {
-        "front": "Binomial random variable",
-        "back": "RV representing number of successes on $N$ independent Bernoulli($p$) trials. $P(N=k) = \\binom{N}{k} p^k (1-p)^{N-k}$, $k=0,1,\\dots,N$ "
-    },
-    {
-        "front": "Geometric random variable",
-        "back": "For repeated, independent Binomial($p$) trials, RV $G$ is number of trials to first success.  $p_G(k) = p(1-p)^{k-1}$, $k=1,2,\\ldots$"
-    },
-    {
-        "front": "Poisson random variable",
-        "back": "Models events that occur randomly over time (or space). If average of $\\alpha$ events in observation window, \\[p_X(k) = \\frac{\\alpha^k}{k!} e^{- \\alpha},~~k = 0, 1, \\ldots\\]"
-    },
-    {
-        "front": "continuous uniform random variable",
-        "back": "RV with uncountably infinite range and continuous CDF"
-    },
-    {
-        "front": "probability density function (pdf)",
-        "back": "For a continuous RV $X$, \\[f_X(x) = \\frac{d}{dx} F_X(x)\\] "
-    },
-    {
-        "front": "piecewise function",
-        "back": "A function that has a different functional relationship on different regions of its variable(s)."
-    },
-    {
-        "front": "(Continuous) Uniform RV",
-        "back": "An RV on an interval $[a,b]$ that has the same probability density at every point in that interval, \\[f_U(u) = \\frac{1}{b-a}, ~~ u \\in [a,b] \\]"
-    },
-    {
-        "front": "Exponential RV",
-        "back": "RV with single parameter $\\lambda$ that controls exponential roll-off of density. The pdf is \\[ f_X(x) = \\lambda e^{-\\lambda x} u(x) \\] "
-    },
-    {
-        "front": "inverse CDF",
-        "back": "Given probability $p$, returns value of $x$ such that $F_X(x)=p$. Can denote as $F_{X}^{-1}(p)$. Also called the <i>quantile function</i> or <i>percent-point function</i>."
-    },
-    {
-        "front": "Normal (Gaussian) RV",
-        "back": "RV that often arises from aggregation of random effects. Has parameters $\\mu$ (mean) and $\\sigma$ (standard deviation) and pdf \\[f_X(x)  = \\frac{1}{\\sigma \\sqrt{ 2 \\pi }} \\exp \\left\\{ - \\frac {1} {2}\\left[\\frac{x-\\mu}{\\sigma}\\right]^2   \\right\\},\\]  \\[-\\infty < x < \\infty \\] "
-    },
-    {
-        "front": "Chi-squared RV",
-        "back": "A chi-squared random variable with $M$ degrees of freedom is equivalent to the sum of the squares of $M$ independent, standard Normal random variables."
-    },
-    {
-        "front": "Student's $t$ RV",
-        "back": "RV similar to standard Normal but has probability spread further from the mean. Spread away from mean increases as degrees of freedom parameter decreases."
-    },
-    {
-        "front": "expected value<br>(discrete random variable)",
-        "back": "\\begin{equation*} \\mu_X = E \\left[ X \\right] = \\sum x P_X (x). \\end{equation*}"
-    },
-    {
-        "front": "expected value<br>(continuous random variable)",
-        "back": "\\begin{equation*} \\mu_X = E \\left[ X \\right] = \\int_{-\\infty}^{\\infty} x f_X (x) ~dx. \\end{equation*}"
-    },
-    {
-        "front": "mode (of a random variable)",
-        "back": "The value with the highest probability (for a discrete random variable) or the highest probability density (for a continuous random variable)."
-    },
-    {
-        "front": "median (of a random variable) ",
-        "back": "For a random variable $X$ with distribution function $F_X(x)$, the median is a value $\\tilde{X}$ such that $P\\left(X \\le \\tilde{X} \\right) = P\\left(X > \\tilde{X}\\right)$. An equivalent condition is $F_X\\left(\\tilde{X} \\right) = 1/2$. The median is not necessarily unique."
-    },
-    {
-        "front": "$n$th moment",
-        "back": "\\begin{equation*} E[X^n], ~~~ n=1,2,\\ldots \\end{equation*}"
-    },
-    {
-        "front": "Law of the Unconscious Statistician<br>(LOTUS)",
-        "back": "Let $g(x)$ be a real function. For discrete $X$, \\begin{equation*} E\\left[ g(X) \\right] = \\sum_x g(x) p_X(x).\\end{equation*} For continuous $X$, \\begin{equation*} E\\left[ g(X) \\right] = \\int_{-\\infty}^{\\infty} g(x) f_X(x)~dx.\\end{equation*} "
-    },
-    {
-        "front": "$n$th central moment",
-        "back": "\\begin{equation*}E[(X-\\mu_X)^n], ~~~ n=2,3,\\ldots \\end{equation*} "
-    },
-    {
-        "front": "variance<br>(random variable)",
-        "back": "The 2nd central moment, \\begin{equation*}\\operatorname{Var}(X) =\\sigma_{X}^{2} = E \\left[ \\left( X - \\mu_X \\right)^2 \\right]\\end{equation*}"
-    },
-    {
-        "front": "variance of a constant:<br>$\\operatorname{Var}[c]$",
-        "back": "zero:<br>$ \\operatorname{Var}[c]=0$"
-    },
-    {
-        "front": "variance when adding a constant<br>$\\operatorname{Var}[X+c]$",
-        "back": "unchanged:<br> $\\operatorname{Var}[X+c]= \\operatorname{Var}[X]$"
-    },
-    {
-        "front": "variance when multiplying by a constant<br>$\\operatorname{Var}[cX]$",
-        "back": "constant-squared times variance:<br> $\\operatorname{Var}[cX]= c^2 \\operatorname{Var}[X]$"
-    },
-    {
-        "front": "variance of sum of independent random variables<br> \\begin{equation*} \\operatorname{Var} \\left[ \\sum_{i=0}^{N-1} X_i \\right] \\end{equation*}",
-        "back": "sum of variances:<br>\\begin{equation*} \\operatorname{Var} \\left[ \\sum_{i=0}^{N-1} X_i \\right] =\\sum_{i=0}^{N-1} \\operatorname{Var} \\left[ X_i \\right] \\end{equation*}"
-    },
-    {
-        "front": "vector",
-        "back": "An ordered list of numbers, usually shown enclosed in square brackets and separated by commas."
-    },
-    {
-        "front": "estimate",
-        "back": "Given a vector of observed values $\\mathbf{x}$ from a single distribution, an <i>estimate</i> for a parameter $\\theta$ is a numerical value $\\hat{\\theta}$ that is a function of the observed data."
-    },
-    {
-        "front": "estimator",
-        "back": "Given a vector of random variables $\\mathbf{X}$ from a common distribution, an <i>estimator</i> for a parameter $\\theta$ of the distribution is a random variable $\\hat{\\Theta}$ that is a function of the random variables."
-    },
-    {
-        "front": "estimator error",
-        "back": "The difference between the estimator for a parameter and the true value, $\\hat{\\Theta} - \\theta$."
-    },
-    {
-        "front": "estimator bias",
-        "back": "The difference between the <b>mean</b> of an estimator and the true value, $ E[\\hat{\\Theta}] - \\theta$."
-    },
-    {
-        "front": "unbiased estimator",
-        "back": "$E[\\hat{\\theta}] = \\theta$<br> i.e., the estimator bias is zero."
-    },
-    {
-        "front": "standard error of the mean<br>SEM",
-        "back": " For $n$ samples from a random variable with known standard deviation $\\sigma_X$, the <i>standard error of the mean (SEM)</i> is the standard deviation of the mean estimator, \\begin{align*} \\sigma_{\\hat{X}} =  \\frac{\\sigma_X}{\\sqrt{n}}. \\end{align*}"
-    },
-    {
-        "front": "sampling distribution",
-        "back": "Given a vector of independent random variables $\\mathbf{X}$ and a parameter estimator $\\hat{\\Theta} = g(\\mathbf{X})$, the <i>sampling distribution</i> is the probability distribution of $\\hat{\\Theta}$."
-    },
-    {
-        "front": "effect size",
-        "back": "One of many measures of separation between distributions. For a difference of means, Cohen's $d$ is standard: \\begin{equation*} d =\\frac{\\mu_X - \\mu_Y}{\\sigma} \\end{equation*}"
-    },
-    {
-        "front": "point conditioning",
-        "back": "Point conditioning occurs when the conditioning  event is that a continuous random variable is equal to a particular value. I.e., $P(A|X=x)$, where $X$ is a continuous random variable."
-    },
-    {
-        "front": "likelihood for discrete-input, continuous-output systems",
-        "back": "A conditional density in a form like $f_X(x|A_i)$"
-    },
-    {
-        "front": "<it>a posteriori</it> probability for discrete-input, continuous-output systems",
-        "back": "A conditional probability in a point-conditioning form like $P(A|X=x)$"
-    },
-    {
-        "front": "total probability for CDFs",
-        "back": "\\begin{align*} F_X(x) &= \\sum_i F_X(x|A_i) P(A_i) \\end{align*}"
-    },
-    {
-        "front": "total probability for pdfs",
-        "back": "\\begin{align*} f_X(x) &= \\sum_i f_X(x|A_i) P(A_i) \\end{align*}"
-    },
-    {
-        "front": "total probability for events with point conditioning",
-        "back": "\\begin{align*}P(A) &=\\int_{-\\infty}^{\\infty} P(A|X=x)f_X(x) ~dx.\\end{align*}"
-    },
-    {
-        "front": "categorical data",
-        "back": "Data that does not take on a specific numerical value but instead takes on one of several categories."
-    },
-    {
-        "front": "ordinal data",
-        "back": "Categorical data for which the categories have a natural ordering."
-    },
-    {
-        "front": "nominal data",
-        "back": "Categorical data for which the categories have no natural ordering."
-    },
-    {
-        "front": "contingency table",
-        "back": "For data consisting of two or more categorical features, a table that lists the number of occurrences (the counts) for each combination of feature outcomes. The totals across each category (rows and columns for a two-way table) are also usually computed and shown. Also called a <i>cross tabulation</i>. "
-    },
-    {
-        "front": "degrees of freedom<br>(contingency table)",
-        "back": "For a contingency table, the <i>number of degrees of freedom</i>, abbreviated dofs, is the number of values in the table that can be selected independently while satisfying the row and column totals. For a table with $r$ rows and $c$ columns, the number of dofs is \\begin{equation*} n_{dof} = (r-1)(c-1). \\end{equation*}"
-    },
-    {
-        "front": "one-way table",
-        "back": "A table that shows the relative frequencies for a single categorical variable.  Also called a <i>one-way frequency table</i> or <i>one-way contingency table</i>."
-    },
-    {
-        "front": "vector",
-        "back": "A one-dimensional, ordered list of numbers that has an accompanying notions of magnitude of a vector and  distance between two vectors."
-    },
-    {
-        "front": "component or element (vector)",
-        "back": "One of the numerical values that make up the vector."
-    },
-    {
-        "front": "scalar",
-        "back": "A singular numerical value."
-    },
-    {
-        "front": "size (of a vector)",
-        "back": "The number of components a vector contains."
-    },
-    {
-        "front": "zero vector",
-        "back": "A vector of all zeros."
-    },
-    {
-        "front": "ones vector",
-        "back": "A vector of all ones. "
-    },
-    {
-        "front": "standard unit vector",
-        "back": "A vector of with all of its components equal to zero, except one element which is equal to one."
-    },
-    {
-        "front": "vector addition",
-        "back": "The sum of vectors $\\mathbf{a}$ and $\\mathbf{b}$ is a vector $\\mathbf{a+b}$ whose $i$th component is the sum of the $i$th components of $\\mathbf{a}$ and $\\mathbf{b}$; i.e. $\\mathbf{(a+b)}_i = a_i + b_i$."
-    },
-    {
-        "front": "scalar-vector multiplication",
-        "back": "Given a vector $\\mathbf{x}$ and a scalar $\\alpha$, $\\alpha \\mathbf{x}$ is the vector with components given by the components of $\\mathbf{x}$ multiplied by $\\alpha$: \\begin{equation*} \\alpha \\mathbf{x} = \\left[ \\alpha x_0, ~ \\alpha x_1, ~\\ldots, ~ \\alpha x_{n-1} \\right]^T. \\end{equation*}"
-    },
-    {
-        "front": "component-wise vector multiplication<br>(Hadamard product)",
-        "back": "Given $n$-vectors $\\mathbf{x}$ and $\\mathbf{y}$, the <I>Hadamard product</I> or <I>Schur product</I> is \\begin{equation*} \\mathbf{x} \\odot \\mathbf{y} = \\left[ x_0 y_0, ~~ x_1 y_1, ~~ \\ldots,~~ x_{n-1} y_{n-1}  \\right]. \\end{equation*}"
-    },
-    {
-        "front": "dot product/<br>inner product",
-        "back": "Given $n$-vectors $\\mathbf{x}$ and $\\mathbf{y}$, the <I>dot product</I> or <I>inner product</I> is the <B>scalar value</B> given by multiplying corresponding components and summing them up: \\begin{equation*} \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=0}^{n-1} x_i y_i. \\end{equation*}"
-    },
-    {
-        "front": "norm squared",
-        "back": "For a mathematical object $\\mathbf{x}$ with an inner product operator $\\langle , \\rangle$, the norm squared is denoted by $\\| x \\|^2$, and defined as \\begin{equation*} \\| x \\|^2 = \\langle x, x \\rangle .\\end{equation*}"
-    },
-    {
-        "front": "norm",
-        "back": "For a mathematical object $\\mathbf{x}$ with an inner product operator $\\langle , \\rangle$, the norm is denoted by $\\| x \\|$ and defined as \\begin{equation*} \\| x \\|^2 = \\sqrt{\\langle x, x \\rangle }.\\end{equation*}"
-    },
-    {
-        "front": "distance (vectors)",
-        "back": "The distance between two $n$-vectors $\\mathbf{x}$ and $\\mathbf{y}$ is the norm of the difference between the vectors,  $\\| \\mathbf{x} - \\mathbf{y} \\| = \\|\\mathbf{y} - \\mathbf{x} \\|.$"
-    },
-    {
-        "front": "transpose",
-        "back": "Interchange the rows and columns in a matrix. For a matrix $\\mathbf{M},$ the transpose is denoted by $\\mathbf{M}^{T}$ satisifies  \\begin{equation*} \\mathbf{M}^T [i,j] = \\mathbf{M}[j,i] ~~~ \\forall i,j.\\end{equation*}"
-    },
-    {
-        "front": "covariance<br>(random variables)",
-        "back": "For random variables $X$ and $Y$, the <i>covariance</i> is the joint moment \\begin{equation*} \\operatorname{Cov}(X, Y) = E \\left[ \\left( X - E[X]\\right) \\left( Y- E[Y]\\right) \\right]. \\end{equation*}"
-    },
-    {
-        "front": "covariance<br>(data vectors)",
-        "back": "For $n$-vectors  $\\mathbf{x}$ and $\\mathbf{y}$, the unbiased sample <i>covariance</i> is  \\begin{equation*} \\operatorname{Cov}( \\mathbf{x}, \\mathbf{y}) = \\frac{1}{n-1} \\sum_{i=0}^{n-1} \\left(x_i - \\overline{x}\\right) \\left(y_i - \\overline{y}\\right) . \\end{equation*}"
-    },
-    {
-        "front": "correlation coefficient<br>(random variables)",
-        "back": "For random variables $X$ and $Y$, the <i>correlation coefficient</i> is \\begin{equation*} \\rho = \\frac{ \\operatorname{Cov}(X, Y)}{\\sigma_X \\sigma_Y}. \\end{equation*} "
-    },
-    {
-        "front": "correlation coefficient<br>(data vectors)",
-        "back": "For $n$-vectors  $\\mathbf{x}$ and $\\mathbf{y}$, the <i>correlation coefficient</i> or <i>Pearson's correlation coefficient</i> is  \\begin{equation*} r = \\frac{ \\operatorname{Cov}(\\mathbf{x}, \\mathbf{y})}{\\sigma_x \\sigma_y}. \\end{equation*} "
-    },
-    {
-        "front": "explanatory variable",
-        "back": "A variable or feature used to predict or explain differences in another variable. Sometimes called an independent variable, especially if this variable is a variable that is under an experimenter's control."
-    },
-    {
-        "front": "response variable",
-        "back": "A variable or feature that is to be predicted or explained using another variable. Sometimes called a dependent variable, especially if this variable is measured as the result of an experiment."
-    },
-    {
-        "front": "coefficient of determination<br>(simple linear regression)",
-        "back": "In simple linear regression between two data vectors $\\mathbf{x}$ and $\\mathbf{y}$ with Pearson's correlation coefficient $r$, the <i>coefficient of determination</i> is the value $r^2$ (pronounced \"R squared\"), which is also denoted $R^2$."
-    },
-    {
-        "front": "total variance<br>(simple linear regression)",
-        "back": "In simple linear regression between explanatory vector $\\mathbf{x}$ and response vector $\\mathbf{y}$, the total variance refers to the variance of the response vector, $\\sigma_{y}^{2}$, which is the variance without using the explanatory vector to predict the values in $\\mathbf{y}$."
-    },
-    {
-        "front": "explained variance<br>(simple linear regression)",
-        "back": "In simple linear regression between explanatory vector $\\mathbf{x}$ and response vector $\\mathbf{y}$, the explained variance is the variance in the response data after subtracting off the values predicted from the explanatory data. The explained variance is $r^2 \\sigma_{y}^{2}$, where $\\sigma_{y}^{2}$ is the variance of $\\mathbf{y}$ and $r^2$ is the coefficient of determination."
-    },
-    {
-        "front": "joint probability mass function<br>(pair of random variables)",
-        "back": "For a pair of random variables $(X,Y)$, the joint <i>probability mass function</i> (PMF) defines the probability that $(X,Y)$ takes on each value $(x,y) \\in \\mathbb{R}^2$, \\begin{align*} P_{X,Y} (x,y) &= P\\left[  \\left\\{ s \\left| X(s) = x, Y(s) =y \\right. \\right\\} \\right] \\\\ &= P \\left[  X=x, Y=y \\right]. \\end{align*}"
-    },
-    {
-        "front": "joint cumulative distribution function<br>(pair of random variables)",
-        "back": "For a pair of random variables $(X,Y)$, the joint <i>cumulative distribution function</i> (CDF) is \\begin{align*} F_{XY} (x,y) &= P\\left[  \\left\\{ s \\left| X(s) \\le x, Y(s) \\le y \\right. \\right\\} \\right] \\\\ &= P \\left[  X \\le x, Y \\le y \\right]. \\end{align*}"
-    },
-    {
-        "front": "joint probability density function<br>(pair of random variables)",
-        "back": "For a pair of random variables $(X,Y)$, the joint <i>probability density function</i> (pdf) is \\begin{align*} f_{XY} (x,y) &= \\frac{\\partial^2}{\\partial x ~\\partial y} F_{XY} (x,y). \\end{align*}"
-    },
-    {
-        "front": "marginal probability density function<br>(pair of random variables)",
-        "back": "For a pair of random variables $(X,Y)$ with joint pdf $f_{XY} (x,y)$, the <i>marginal density</i> functions of $X$ and $Y$ are the individual pdfs $f_X(x)$ and $f_Y(y)$. They can be calculated from the joint pdf as \\begin{align*} f_X(x) &=  \\int_{-\\infty}^{\\infty} f_{XY} (x,y) dy , \\mbox{ and}\\\\ f_Y(y) &=  \\int_{-\\infty}^{\\infty} f_{XY} (x,y) dx . \\end{align*}"
-    },
-    {
-        "front": "contour of equal probability density<br>(pair of random variables)",
-        "back": "Given some value $a$ that the joint density takes on, the corresponding <i>contour of equal probability density</i> $\\mathcal{C}_a$ is defined as the set of $(x,y)$ values that achieve that density. I.e., if the joint density is $f_{XY}(x,y)$, then \\begin{align*} \\mathcal{C}_a = \\left\\{ (x,y) ~\\vert~ f(x,y) =a \\right\\}. \\end{align*}"
-    },
-    {
-        "front": "random vector",
-        "back": "A random vector $\\mathbf{X}= \\left[X_0, X_1, \\ldots, X_{n-1}\\right]^T$ is an ordered collection of random variables. Formally, a random vector is defined on a  probability space $(S, \\mathcal{F}, P)$ and is a function $\\mathbf{X}(s)$ that maps from the sample space to $\\mathbf{R}^n$."
-    },
-    {
-        "front": "mean vector",
-        "back": "For a random vector $\\mathbf{X}= \\left[X_0, X_1, \\ldots, X_{n-1}\\right]^T$, the <i>mean vector</i> $\\boldsymbol{\\mu}$ is the $n$-dimensional vector whose $i$th entry is the mean of $X_i$; i.e. $\\boldsymbol{\\mu}_i = E\\left[X_i\\right]$."
-    },
-    {
-        "front": "covariance matrix",
-        "back": "For a random vector $\\mathbf{X}= \\left[X_0, X_1, \\ldots, X_{n-1}\\right]$, the <i>covariance matrix</i> $K$ is the $n \\times n$ matrix whose $i,j$th entry is \\begin{align*} \\mathbf{K}_{ij} &= \\operatorname{Cov}(X_i, X_j) \\\\ &= E \\left[ \\left(X_i - \\mu_i \\right) \\left(X_j - \\mu_j\\right) \\right]. \\end{align*}"
-    },
-    {
-        "front": "correlation coefficient<br>(random variables)",
-        "back": "For jointly distributed random variables $X$ and $Y$, the <i>correlation coefficient</i> is \\begin{align*} \\rho &= \\frac{\\operatorname{Cov}(X, Y)}{\\sigma_X \\sigma_y}, \\end{align*} where $\\sigma_{X}^{2}$ and $\\sigma_{Y}^{2}$ are the variances of $X$ and $Y$."
-    },
-    {
-        "front": "uncorrelated",
-        "back": "Jointly distributed random variables $X$ and $Y$ are uncorrelated if and only if $\\rho=0$, or equivalently $\\operatorname{Cov}(X,Y) =0$."
-    },
-    {
-        "front": "correlation matrix",
-        "back": "For a random vector $\\mathbf{X}= \\left[X_0, X_1, \\ldots, X_{n-1}\\right]$, the <i>correlation matrix</i> $\\mathbf{R}$ is the $n \\times n$ matrix whose $i,j$th entry is \\begin{align*} \\mathbf{R}_{ij} &= \\rho_{i,j} \\\\ &= \\frac{\\operatorname{Cov}\\left(X_i, X_j\\right)}{\\sigma_i \\sigma_j}. \\end{align*}"
-    },
-    {
-        "front": "iid",
-        "back": "Random variables are <i>independent and identically distributed (iid)</i> if they have the same distributions and are independent."
-    },
-    {
-        "front": "broadcasting",
-        "back": "In NumPy, a smaller array is <i>broadcast</i> across a larger array in such a way that the dimensions of the two arrays will match. "
-    },
-    {
-        "front": "standardization",
-        "back": "The process by which numerical data is transformed such that each feature has mean zero and variance one."
-    },
-    {
-        "front": "eigenvector",
-        "back": "Given a $n \\times n$ matrix $\\mathbf{M}$,  a non-zero vector $\\mathbf{v}$ is an <i>eigenvector</i> of $\\mathbf{M}$ if \\begin{equation*} \\mathbf{M} \\mathbf{v} = \\lambda \\mathbf{v} \\end{equation*} for some constant $\\lambda$."
-    },
-    {
-        "front": "eigenvalue",
-        "back": "Given a $n \\times n$ matrix $\\mathbf{M}$, if  $\\mathbf{v}$ is an eigenvector of $\\mathbf{M}$, then the corresponding <i>eigenvalue</i> is the constant $\\lambda$ such that \\begin{equation*} \\mathbf{M} \\mathbf{v} = \\lambda \\mathbf{v}. \\end{equation*}"
-    },
-    {
-        "front": "characteristic equation",
-        "back": "Given a $n \\times n$ matrix $\\mathbf{M}$, the <i>characteristic equation</i> is \\begin{equation*} \\det \\left(\\mathbf{M} - \\lambda \\mathbf{I} \\right) =0, \\end{equation*} which can be used to solve for the eigenvalues ($\\lambda$)."
-    },
-    {
-        "front": "modal matrix",
-        "back": "For a square matrix $\\mathbf{M}$, the matrix whose columns are the eigenvectors of $\\mathbf{M}$. "
-    },
-    {
-        "front": "eigendecomposition",
-        "back": " Suppose $\\mathbf{M}$ is a real $n \\times n$ matrix with modal matrix $\\mathbf{V}$ and eigenvalue matrix $\\boldsymbol{\\Lambda}$. If $\\mathbf{V}$ has full rank, then the <i>eigendecomposition</i> (diagonalization) of $\\mathbf{M}$ is \\begin{equation*} \\mathbf{M}= \\mathbf{V} \\boldsymbol{\\Lambda}\\mathbf{V}^{-1} . \\end{equation*}    "
-    },
-    {
-        "front": "relating determinant and eigenvalues",
-        "back": " If $\\mathbf{M}$ has an eigendecomposition with eigenvalues $\\lambda_i$ then \\begin{equation*} \\det \\mathbf{M} = \\prod_{i} \\lambda_{i} . \\end{equation*}"
-    },
-    {
-        "front": "dimensionality reduction",
-        "back": "The process of going from a high-dimensionality data set to a lower-dimensionality data set, while preserving as much important information as possible."
-    },
-    {
-        "front": "Karhunen-Lo\u00e8ve Transform<br>(KLT)",
-        "back": "Suppose  $\\mathbf{X}$ has non-singular covariance matrix $\\mathbf{K}_X$, with eigendecomposition $\\mathbf{K}_X = \\mathbf{U} \\boldsymbol{\\Lambda}\\mathbf{U}^T$. Then $\\mathbf{Y} = \\mathbf{U}^T \\mathbf{X}$ consists of uncorrelated random variables and $\\mathbf{K}_Y = \\boldsymbol{\\Lambda}.$"
-    },
-    {
-        "front": "principal components analysis<br>(PCA)",
-        "back": "Given a multi-dimensional data set, <I>PCA</I> is the process by which the data is decorrelated using the modal matrix of the <B>sample covariance matrix</B>. "
-    },
-    {
-        "front": "scree plot",
-        "back": "In PCA, a <I>scree plot</I> is a line plot that illustrates the eigenvalues of the covariance matrix of a multidimensional dataset."
-    },
-    {
-        "front": "explained variance",
-        "back": "In dimensionality reduction, the <I>explained variance</I> is the ratio of the total variance after dimensionality reduction to the total variance of the original data set."
-    },
-    {
-        "front": "test-train split",
-        "back": "The data is randomly partitioned into a training set and a testing set. The training set is used to train an algorithm or develop a model and usually uses the majority of the data; typical values are 75% of the total data. The testing set is used to make sure that the algorithm or model is not overfit; it consists of all the data not in the training set."
-    }
-];
-var frontColorsOytQysGhMchT= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsOytQysGhMchT= ["var(--dark-blue-gray)" ];
-var textColorsOytQysGhMchT= ["var(--snow)" ];
-
-
-        {
-        const jmscontroller = new AbortController();
-        const signal = jmscontroller.signal;
-
-        setTimeout(() => jmscontroller.abort(), 5000);
-
-        fetch("https://raw.githubusercontent.com/jmshea/data-science-flashcards/main/subsets/all.json", {signal})
-        .then(response => response.json())
-        .then(json => createCards("OytQysGhMchT", "True", "True", "True", "Data Science Flashcards", "Data Science"))
-        .catch(err => {
-        console.log("Fetch error or timeout");
-        try_create(); 
-        });
-        }
-        
-</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7b43795f-62a0-403c-a7fc-71689d6c1665">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Control</strong></p>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<h2>Basic Data Science Terms</h2>
 <ul>
-<li>On mobile, tap to flip the card over. Swipe left or tap Next to advance to the next card.</li>
-<li>On desktop, click or press the Spacebar to flip the card over. Tap Next or use the Right Arrow key to advance to the next card.</li>
+<li>data</li>
+<li>data science</li>
+<li>data point</li>
+<li>variables</li>
+<li>features</li>
+<li>quantitative data</li>
+<li>qualitative data</li>
+<li>research question</li>
+</ul>
+<h2>Basics of Random Experiments</h2>
+<ul>
+<li>scatter plot</li>
+<li>histogram</li>
+<li>relative frequency</li>
+<li>random experiment</li>
+<li>outcome</li>
+<li>set</li>
+<li>event</li>
+<li>event class</li>
+<li>fair experiment</li>
+<li>probability</li>
+</ul>
+<h2>Basics of Hypothesis Testing and Summary Statistics</h2>
+<ul>
+<li>disjoint</li>
+<li>set</li>
+<li>partition<br/>(data set)</li>
+<li>statistical hypothesis</li>
+<li>binary hypothesis test </li>
+<li>null hypothesis<br/>(for multiple groups)</li>
+<li>model-based methods</li>
+<li>model-free methods</li>
+<li>resampling</li>
+<li>plot legend</li>
+<li>outlier</li>
+<li>mode</li>
+<li>median</li>
+<li><i>average</i> (or <i>sample mean</i>) of a data set</li>
+</ul>
+<h2>Probability Spaces and Combinatorics</h2>
+<ul>
+<li>event class</li>
+<li>power set</li>
+<li>probability measure</li>
+<li>composite experiment</li>
+<li>trial (compound experiments)</li>
+<li>repeated experiment</li>
+<li>statistical regularity</li>
+<li>outcome (of a random experiment)</li>
+<li>sample space</li>
+<li>event</li>
+<li>fair (random experiment)</li>
+<li>combinatorics</li>
+<li>Cartesian product</li>
+<li>permutation</li>
+</ul>
+<h2>Statistical Studies and Null Hypothesis Significance Testing</h2>
+<ul>
+<li>Type-I error</li>
+<li>Type-II error</li>
+<li>power</li>
+<li>exact permutation test</li>
+<li>bootstrap distribution</li>
+<li>confidence interval (CI)</li>
+<li>statistical study</li>
+<li>experimental study or experiment</li>
+<li>observational study</li>
+<li>randomized control trial (RCT)</li>
+<li>natural experiment</li>
+<li>population</li>
+<li>population study</li>
+<li>sample</li>
+<li>cross-sectional study</li>
+<li>longitudinal study</li>
+<li>longitudinal cohort study</li>
+<li>prospective study</li>
+<li>retrospective study</li>
+<li>post hoc analysis</li>
+<li>selection bias</li>
+<li>sampling distribution</li>
+<li>mode(s) of a distribution    </li>
+<li>unimodal distribution    </li>
+<li>tail probability</li>
+<li>right, or upper, tail</li>
+<li>left, or lower, tail</li>
+<li>two-sided tail</li>
+</ul>
+<h2>Conditional Probability and Statistical Independence</h2>
+<ul>
+<li>conditional probability</li>
+<li>statistically independent <br/>(two events)</li>
+<li>statistically independent<br/>(any number of events)</li>
+<li>pairwise statistically independent </li>
+<li>statistically independent (s.i.)<br/>vs<br/>mutually exclusive (m.e.)</li>
+<li>conditional independence (events)</li>
+</ul>
+<h2>Bayes Rule and Optimal Decisions</h2>
+<ul>
+<li>stochastic system</li>
+<li>likelihoods<br/>(discrete stochastic systems)</li>
+<li><i>a posteriori</i> probability<br/>(discrete stochastic system)</li>
+<li><i>a priori</i> probability<br/>(discrete stochastic system)</li>
+<li>Bayes' Rule<br/>(discrete stochastic system)</li>
+<li>base rate fallacy</li>
+<li>hidden state</li>
+<li>decision rule<br/>(discrete stochastic system)</li>
+<li>maximum likelihood (ML) rule<br/>(discrete stochastic system)</li>
+<li>MAP rule<br/>(discrete stochastic system)</li>
+<li>uninformative prior</li>
+<li>informative prior</li>
+<li>credible interval</li>
+</ul>
+<h2>Random Variables</h2>
+<ul>
+<li>Borel sets (of $\mathbb{R}$)</li>
+<li>Borel field or Borel $\sigma$-algebra</li>
+<li>random variable</li>
+<li>range (of a random variable)</li>
+<li>discrete random variable</li>
+<li>probability mass function (PMF)</li>
+<li>cumulative distribution function (CDF)</li>
+<li>staircase function</li>
+<li>survival function (SF)</li>
+<li>discrete uniform random variable</li>
+<li>Bernoulli random variable</li>
+<li>Binomial random variable</li>
+<li>Geometric random variable</li>
+<li>Poisson random variable</li>
+<li>continuous uniform random variable</li>
+<li>probability density function (pdf)</li>
+<li>piecewise function</li>
+<li>(Continuous) Uniform RV</li>
+<li>Exponential RV</li>
+<li>inverse CDF</li>
+<li>Normal (Gaussian) RV</li>
+<li>Chi-squared RV</li>
+<li>Student's $t$ RV</li>
+</ul>
+<h2>Expected Values and Estimation</h2>
+<ul>
+<li>expected value<br/>(discrete random variable)</li>
+<li>expected value<br/>(continuous random variable)</li>
+<li>mode (of a random variable)</li>
+<li>median (of a random variable) </li>
+<li>$n$th moment</li>
+<li>Law of the Unconscious Statistician<br/>(LOTUS)</li>
+<li>$n$th central moment</li>
+<li>variance<br/>(random variable)</li>
+<li>variance of a constant:<br/>$\operatorname{Var}[c]$</li>
+<li>variance when adding a constant<br/>$\operatorname{Var}[X+c]$</li>
+<li>variance when multiplying by a constant<br/>$\operatorname{Var}[cX]$</li>
+<li>variance of sum of independent random variables<br/> \begin{equation*} \operatorname{Var} \left[ \sum_{i=0}^{N-1} X_i \right] \end{equation*}</li>
+<li>vector</li>
+<li>estimate</li>
+<li>estimator</li>
+<li>estimator error</li>
+<li>estimator bias</li>
+<li>unbiased estimator</li>
+<li>standard error of the mean<br/>SEM</li>
+<li>sampling distribution</li>
+<li>effect size</li>
+</ul>
+<h2>Point Conditioning, Non-Bayesian and Bayesian Decision Rules with Continuous Observations</h2>
+<ul>
+<li>likelihood for discrete-input, continuous-output systems</li>
+<li>receiver operating characteristic (ROC) curve</li>
+<li>area under curve (AUC)</li>
+<li>point conditioning</li>
+<li><it>a posteriori</it> probability for discrete-input, continuous-output systems</li>
+<li>total probability for CDFs</li>
+<li>total probability for pdfs</li>
+<li>total probability for events with point conditioning</li>
+</ul>
+<h2>Categorical Data, Contingency Tables, and Chi-Squared Tests</h2>
+<ul>
+<li>categorical data</li>
+<li>ordinal data</li>
+<li>nominal data</li>
+<li>contingency table</li>
+<li>degrees of freedom<br/>(contingency table)</li>
+<li>one-way table</li>
+</ul>
+<h2>Covariance, Correlation, and Linear Regression</h2>
+<ul>
+<li>vector</li>
+<li>component or element (vector)</li>
+<li>scalar</li>
+<li>size (of a vector)</li>
+<li>zero vector</li>
+<li>ones vector</li>
+<li>standard unit vector</li>
+<li>vector addition</li>
+<li>scalar-vector multiplication</li>
+<li>component-wise vector multiplication<br/>(Hadamard product)</li>
+<li>dot product/<br/>inner product</li>
+<li>norm squared</li>
+<li>norm</li>
+<li>distance (vectors)</li>
+<li>transpose</li>
+<li>covariance<br/>(random variables)</li>
+<li>covariance<br/>(data vectors)</li>
+<li>correlation coefficient<br/>(random variables)</li>
+<li>correlation coefficient<br/>(data vectors)</li>
+<li>explanatory variable</li>
+<li>response variable</li>
+<li>coefficient of determination<br/>(simple linear regression)</li>
+<li>total variance<br/>(simple linear regression)</li>
+<li>explained variance<br/>(simple linear regression)</li>
+</ul>
+<h2>Jointly Distributed Random Variables, KLT, and PCA</h2>
+<ul>
+<li>joint probability mass function<br/>(pair of random variables)</li>
+<li>joint cumulative distribution function<br/>(pair of random variables)</li>
+<li>joint probability density function<br/>(pair of random variables)</li>
+<li>marginal probability density function<br/>(pair of random variables)</li>
+<li>contour of equal probability density<br/>(pair of random variables)</li>
+<li>random vector</li>
+<li>mean vector</li>
+<li>covariance matrix</li>
+<li>correlation coefficient<br/>(random variables)</li>
+<li>uncorrelated</li>
+<li>correlation matrix</li>
+<li>iid</li>
+<li>broadcasting</li>
+<li>standardization</li>
+<li>eigenvector</li>
+<li>eigenvalue</li>
+<li>characteristic equation</li>
+<li>modal matrix</li>
+<li>eigendecomposition</li>
+<li>relating determinant and eigenvalues</li>
+<li>dimensionality reduction</li>
+<li>Karhunen-Loève Transform<br/>(KLT)</li>
+<li>principal components analysis<br/>(PCA)</li>
+<li>scree plot</li>
+<li>explained variance</li>
+<li>test-train split</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4f17fad1-67f1-459c-bb78-7c8ba20675b6">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=814d5128-b982-44f5-b077-20cd69fcd6a6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="More-on-Terms-and-Coverage">More on Terms and Coverage<a class="anchor-link" href="#More-on-Terms-and-Coverage">¶</a></h2><p>You can <a href="terms.html">see the list of all the terms included in the flashcards</a>.</p>
-<p>If you want to study particular topics, I would suggest to use the Chapter Summaries for my book at <a href="https://www.fdsp.net">Foundations of Data Science with Python — Online Resources</a></p>
-<p>These flashcards do <strong>not</strong> cover machine learning. These machine learning cards from Chris Albon are quite popular (but not interactive): <a href="https://machinelearningflashcards.com/">Machine Learning Flashcards</a></p>
-<p>Cards are shown in random order, and the order shuffles each time through or each time you load the page.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=66a4f905-30f1-4c20-9502-0d2a4d196479">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Providing-Feedback">Providing Feedback<a class="anchor-link" href="#Providing-Feedback">¶</a></h2><p>If you have suggestions, corrections, or additions for these cards:</p>
-<ul>
-<li>open a pull request on the <a href="https://github.com/jmshea/data-science-flashcards">GitHub repo</a> if you know how</li>
-<li>send an email to jshea@ece.ufl.edu</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=da18d086-1089-4a36-9404-ac49aa03584c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Source-for-these-flashcards">Source for these flashcards<a class="anchor-link" href="#Source-for-these-flashcards">¶</a></h2><p>These cards are from my book <em>Foundations of Data Science with Python</em>:</p>
-<p><a href="https://amzn.to/48PvKip" target="_blank"><img alt="Cover image for the published book Foundations of Data Science with Python by John M. Shea" src="images/3d-book.png" width="300px"/></a></p>
-<p>The book was published on February 22, 2024. Here is a link to purchase: <a href="https://amzn.to/48PvKip" target="_blank"><i>Foundations of Data Science with Python</i> on Amazon</a><sup>1</sup></p>
-<p>If you want to learn more about the topics covered in these flashcards, please consider buying the book!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7886f514-3327-45b2-add7-9b1d73619a74">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><sup>1</sup> <em>As an Amazon Associate I earn from qualifying purchases.</em></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=47295e30-5aa4-4d8f-a260-5d74ca9c0e36">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="JupyterCards:-Interactive-flashcards-in-Jupyter-with-Python">JupyterCards: Interactive flashcards in Jupyter with Python<a class="anchor-link" href="#JupyterCards:-Interactive-flashcards-in-Jupyter-with-Python">¶</a></h2><p>These interactive flashcards are made using my <a href="https://github.com/jmshea/jupytercards/">JupyterCards Python library</a>. It is open source and easy to use.</p>
+<p><a href="index.html">Link to the Interactive Flashcards</a></p>
 </div>
 </div>
 </div>
