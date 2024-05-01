@@ -13,7 +13,7 @@ add_ga:
 	python insert_file.py index.html ga.script "mathjax" index2.html
 
 add_og:
-	python insert_file.py index.html og.html "title" index.html
+	python insert_file.py index2.html og.html "title" index.html
 
 fix_title:
 	sed -i .bak 's/<title>.*<\/title>/<title>Data Science Flashcards<\/title>/' index.html
